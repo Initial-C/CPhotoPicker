@@ -693,7 +693,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                         }];
                 
             }
-                
                 break;
                 
             case ePhotoResolutionTypeScreenSize: {
@@ -712,7 +711,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                         }];
                 
             }
-                
                 break;
                 
             case ePhotoResolutionTypeOrigin: {
@@ -730,7 +728,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                             
                                                         }];
             }
-                
                 break;
         }
         

@@ -59,6 +59,7 @@
             break;
         }
     }
+    [self refreshNaviBarState];
 }
 
 - (void)configNavBar {
@@ -120,12 +121,14 @@
     {
         UIButton *sendBtn = [UIButton buttonWithType: UIButtonTypeCustom];
         NSString *str = [NSString stringWithFormat:  @"完成(%ld/%ld)",_selecteAssets.count,_maxSelectCount];
+        sendBtn.enabled = NO;
         [sendBtn setTitle: str forState: UIControlStateNormal];
         [sendBtn addTarget: self action: @selector(sendBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [tabbarView addSubview: sendBtn];
         sendBtn.frame = CGRectMake(tabbarView.frame.size.width - 80 - 10, 0, 80, 40);
         sendBtn.titleLabel.font = [UIFont systemFontOfSize: 16];
         [sendBtn setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
+        [sendBtn setTitleColor: [UIColor lightGrayColor] forState:UIControlStateDisabled];
         _sendBtn = sendBtn;
     }
 }
@@ -165,7 +168,6 @@
     if (_selecteAssets.count == _maxSelectCount && _rightSelectBtn.isSelected == NO) {
         return;
     }
-    
     _rightSelectBtn.selected = !_rightSelectBtn.selected;
 
     CPhotoBrowserCell *browserCell = (CPhotoBrowserCell *)[_collectionView cellForItemAtIndexPath: [NSIndexPath indexPathForItem: _currentIndex inSection: 0]];
@@ -224,6 +226,7 @@
     _rightSelectBtn.selected = hited;
 
     NSString *str = [NSString stringWithFormat:  @"完成(%ld/%ld)",_selecteAssets.count,_maxSelectCount];
+    _sendBtn.enabled = _selecteAssets.count > 0 ? YES : NO;
     [_sendBtn setTitle: str forState: UIControlStateNormal];
 }
 

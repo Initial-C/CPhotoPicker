@@ -381,11 +381,9 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 
     CPhotoGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: cellIdentifier forIndexPath: indexPath];
-    if (indexPath.item == nil) {
+    if (indexPath.item == 0) {
         cell.photoAsset = kCImageQuickName(@"camera_d");
-        cell.isHiddenSelectImg = YES;
     } else if (indexPath.item >= 1) {
-        cell.isHiddenSelectImg = NO;
         cell.photoAsset = _dataArray[indexPath.item - 1];
         cell.selectCompletion = ^(id asset , BOOL hadSelectd, CPhotoGridCell *gridCell){
             [self didTapCellWithAsset: asset selectState: hadSelectd cell:gridCell];

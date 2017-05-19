@@ -26,23 +26,56 @@
     
 }
 - (IBAction)pickerClick:(id)sender {
+    /*
+     finalShareImgUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("memoryForWeChat.jpeg")
+     do {
+     try UIImageJPEGRepresentation(finalShareImg!, 0.8)?.write(to: finalShareImgUrl!, options: .atomic)
+     } catch {
+     print("writingImageDataError==\(error)")
+     }
+     */
     CPhotoPicker *picker = [[CPhotoPicker alloc] init];
     __weak typeof(self) weakSelf = self;
     [picker showPhotoPickerWithController:self maxSelectCount:6 completion:^(NSArray *imageSources, BOOL isImgType) {
         if (isImgType) {
-            NSLog(@"图片UIImage数据结果(照相机照的)==%@", imageSources);
+//            NSLog(@"图片UIImage数据结果(照相机照的)==%@", imageSources);
         } else {
-            NSLog(@"照片资源数据结果(相册多选的)==%@", imageSources);
+//            NSLog(@"照片资源数据结果(相册多选的)==%@", imageSources);
             for (id image in imageSources) {
-                [[CPhotoDataManager shareInstance] fetchImageFromAsset:image type:ePhotoResolutionTypeScreenSize targetSize:[UIScreen mainScreen].bounds.size result:^(UIImage *image) {
+                [[CPhotoDataManager shareInstance] fetchImageFromAsset:image type:ePhotoResolutionTypeOrigin targetSize:[UIScreen mainScreen].bounds.size result:^(UIImage *image) {
+                    image = [weakSelf resizeImage:image];
                     NSLog(@"单张图==%@", image);
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        weakSelf.imageV.image = image;
-                    });
+                    weakSelf.imageV.image = image;
                 }];
             }
         }
     }];
+}
+- (UIImage *)resizeImage:(UIImage *)oriImage {
+    // 并把它设置成为当前正在使用的context
+    CGSize newSize = oriImage.size;
+    if (newSize.width > 0 && newSize.width < 750) {
+        return oriImage;
+    } else {
+        newSize = CGSizeMake(750, newSize.height * 750 / newSize.width);
+    }
+    UIGraphicsBeginImageContext(newSize);
+    
+    // 绘制改变大小的图片
+    
+    [oriImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    
+    // 从当前context中创建一个改变大小后的图片
+    
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 使当前的context出堆栈
+    
+    UIGraphicsEndImageContext();
+    
+    // 返回新的改变大小后的图片
+    
+    return scaledImage;
 }
 
 

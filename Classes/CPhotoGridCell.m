@@ -114,10 +114,15 @@
 
 - (void)setPhotoAsset:(id)photoAsset {
     if ([photoAsset isKindOfClass:[UIImage class]]) {
-        _thumbImgView.image = nil;
+        _thumbImgView.hidden = YES;
+        _cameraImgView.hidden = NO;
+        _selectIconImgView.hidden = YES;
         _cameraImgView.image = photoAsset;
         return;
     }
+    _thumbImgView.hidden = NO;
+    _cameraImgView.hidden = YES;
+    _selectIconImgView.hidden = NO;
     _photoAsset = photoAsset;
     
     [[CPhotoDataManager shareInstance] fetchImageFromAsset: photoAsset type: ePhotoResolutionTypeThumb targetSize: CGSizeMake(PhotoCellWidth,PhotoCellWidth) result:^(UIImage * img) {

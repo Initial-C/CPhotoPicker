@@ -41,51 +41,49 @@
 }
 
 - (void)showPhotoListVCWithController:(UIViewController *)controller  maxSelectCount:(NSUInteger)maxCount completion:(void (^)(NSArray * , BOOL isImgType))completion {
-    
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-//        
+//
 //        CAlbumListViewController * albumListVC = [[CAlbumListViewController alloc] init];
 //        UINavigationController * listNav = [[UINavigationController alloc] initWithRootViewController: albumListVC];
 //        [controller presentViewController: listNav animated: YES completion: nil];
-//        
+//
 //        albumListVC.selectCompletion = ^(id albumData) {
-//            
+//
 //            CPhotoGridViewController * photoListVC = [[CPhotoGridViewController alloc] init];
 //            photoListVC.maxSelectCount = maxCount;
 //            photoListVC.albumData = albumData;
 //            photoListVC.selectedCompletion = ^ (NSArray * imagesArray) {
-//                
+//
 //                if (completion) {
 //                    completion(imagesArray);
 //                }
 //            };
-//            
+//
 //            [listNav pushViewController: photoListVC animated: YES];
 //        };
-//        
+//
 //        CPhotoGridViewController * photoListVC = [[CPhotoGridViewController alloc] init];
 //        photoListVC.maxSelectCount = maxCount;
 //        photoListVC.selectedCompletion = ^ (NSArray * imagesArray) {
-//            
+//
 //            if (completion) {
 //                completion(imagesArray);
 //            }
 //        };
-//        
+//
 //        [listNav pushViewController: photoListVC animated: NO];
-        
+//    });
         CPhotoGridViewController * photoListVC = [[CPhotoGridViewController alloc] init];
         UINavigationController * listNav = [[UINavigationController alloc] initWithRootViewController: photoListVC];
-        
         photoListVC.maxSelectCount = maxCount;
         photoListVC.selectedCompletion = ^ (NSArray * imagesArray, BOOL isImgType) {
-            
             if (completion) {
                 completion(imagesArray , isImgType);
             }
         };
-        
         [controller presentViewController: listNav animated: YES completion: nil];
     });
 }
+
 @end

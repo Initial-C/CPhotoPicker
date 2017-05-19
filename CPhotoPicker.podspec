@@ -16,12 +16,13 @@ s.homepage         = 'https://github.com/Initial-C/CPhotoPicker/blob/master/READ
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Initial-C-William Chang' => 'iwilliamchang@outlook.com' }
 s.source           = { :git => 'https://github.com/Initial-C/CPhotoPicker.git', :tag => s.version.to_s }
-s.ios.deployment_target = '7.0'
+s.ios.deployment_target = '9.0'
 s.requires_arc = true
 
 s.source_files = 'Classes/**/*'
 s.resources = 'Classes/ImageSource/*.{png,xib,nib,bundle,mov}'
 s.public_header_files = 'Classes/*.h'
+s.dependency 'SVProgressHUD', '~> 2.0.3'
 s.frameworks = 'UIKit', 'QuartzCore'
 # s.dependency 'AFNetworking', '~> 2.3'
 end

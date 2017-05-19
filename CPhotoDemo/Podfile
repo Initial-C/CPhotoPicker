@@ -6,6 +6,6 @@ target 'CPhotoDemo' do
   # use_frameworks!
   pod 'CPhotoPicker', :path=> '../'
   # Pods for CPhotoDemo
-  pod 'SVProgressHUD', '~> 2.0.3'
+  # pod 'SVProgressHUD', '~> 2.0.3'
 
 end

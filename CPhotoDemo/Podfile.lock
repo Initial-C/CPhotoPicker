@@ -1,19 +1,19 @@
 PODS:
-  - CPhotoPicker (0.0.1)
+  - CPhotoPicker (0.0.1):
+    - SVProgressHUD (~> 2.0.3)
   - SVProgressHUD (2.0.4)
 
 DEPENDENCIES:
   - CPhotoPicker (from `../`)
-  - SVProgressHUD (~> 2.0.3)
 
 EXTERNAL SOURCES:
   CPhotoPicker:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPhotoPicker: c42eb203681375ca49a97b18655c8bc8a2691807
+  CPhotoPicker: f6ba7689cc6ef3ddb8a6ed580f2f3fcd72499bad
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: 826ef6bf2cccf527eca753f062e501f014fa0c58
+PODFILE CHECKSUM: 4bcbb7646fd24652f483da762095afe225cd03f8
 
 COCOAPODS: 1.2.0.beta.3

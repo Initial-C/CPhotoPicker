@@ -16,12 +16,17 @@
     "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source_files": "Classes/**/*",
   "resources": "Classes/ImageSource/*.{png,xib,nib,bundle,mov}",
   "public_header_files": "Classes/*.h",
+  "dependencies": {
+    "SVProgressHUD": [
+      "~> 2.0.3"
+    ]
+  },
   "frameworks": [
     "UIKit",
     "QuartzCore"

@@ -7,54 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C57551F85F140279D9D5149B6B0398 /* CAlbumDropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0606323A267157D0D6CD09A9F7D17329 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		085A2BC88EAA7F4555152439533E9207 /* CPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0AE449A3547B1E074331D5B9E823AF3F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0B9160B82286A73D82EEE08D9FCA197C /* gridCell_select@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */; };
-		0C0AB78CEF8841BE687C9A35C15A14E4 /* CPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */; };
-		205758C82C84E7BCBC8B37FD32C48904 /* CPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		20AA30104BEF5B990B7F3FF310396140 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2BB0CE4FE7BE4F31DAB9E6D48B930E23 /* CPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		322A76EE3C1A302C2B51AB2943BC2F91 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		001185DF4EB8A6207FC100B218E3DEAF /* CAlbumListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BD3BE5358B605B59701C8C396DDE69 /* CPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0458A3D7E2FE097649419231013598C1 /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */; };
+		074AC3E0696E9E463E85B6F209524484 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		097EBF7F961CC3A867B53BD05840386C /* CPhotoGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		182B9D909CCFA59B7A5EA9F54CDF5172 /* CPhotoBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D8B45651F115926DC85F5A9A3243AD /* UIView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23BF46DDAE14912E2223663161F5B696 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD9287DEE246626CE463AB766658E4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27A0C7E6B9E16C66A4DD0FA20545B3C0 /* CPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		308486162E2E40AD1963DDF652C61BD0 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		30A40532C383A58934EC4A3B8751B736 /* CPhotoDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3241211D5A62DF518C6BE0B59DDF67BC /* CAlbumDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3312BB50CB803FDCCA8FDEC4D5631AB2 /* Pods-CPhotoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C4154092859FF89EF18A1499B36F5 /* Pods-CPhotoDemo-dummy.m */; };
-		334DC230AFB8DA5465849F72C775BB75 /* CPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		350CA6CB9FB95E8DFFF7792577EE959F /* Root.strings in Sources */ = {isa = PBXBuildFile; fileRef = B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */; };
-		3C560796CBDF68ACA548AE44F3520BB4 /* CPhotoDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3D48D866B3F8EEDA0B32BCF50418BE4B /* camera_h@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */; };
-		3E659876F89B6A860A6011E9B21C3473 /* CAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3FC7B09CA19C45CD985C56A96937968E /* arrow@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */; };
-		43ABAAE4E854D98C8A7D3DE066BD586F /* CAlbumDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		55C6DC3738F8E371EF18CBAB3DE58D94 /* CPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5816916C456F0ABC323D87F32521CBB8 /* CPhotoGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48F35A815CECC2C0568F628EA8BC0A72 /* gridCell_select@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */; };
+		4B9B2BB09833F12D1F105AA73FB7B451 /* CPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		50777DC98C7C762256F193AA4498D68E /* CPickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52826059EC3E34BB8017459D264A83D0 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */; };
 		5AD2B46066A0527BDACE07BD09B15F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		62F88E9E925E6670B7DCC32D2C17C5C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
-		771E2241A9151F004EB54D7DEB395132 /* CPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		78E0F80D02A08438BFE19CEDDC563AAB /* UIView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B95AD21F6801D859A58B2BF4CDBC7C9 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8331530930EBC74F5B1D3A4B895EA8C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		8344AD443F31DEE54A50F81BC4CFEC47 /* CPickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8857F553AC572A520AE005E5DFA5F221 /* CPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EB3C6D064F9B588EDA406829DEEBE7A /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96A24C29536617BBAE33C6A4DD45DE29 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96D8BFC1DFF157665F7034B1DBC1FA02 /* CAlbumListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		980DECD876977A391B3D41F341CB1D8D /* CPhotoBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A622D8D6909D096799CCE050D83BB662 /* arrow@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */; };
-		A66947A5595C88F6FF659EC447902606 /* CAlbumListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B31FEEA581D95B5321CE0238BCAED57E /* gridCell_unSelect@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */; };
-		B7A46D5D0E4E4168FA250A759A93B974 /* CPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB85B22EA928B293AA70E42019315AB0 /* CPhotoDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C07AEC86C1BA8FECCEF66361244295FF /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */; };
-		C1A394AD086A52DD4C902AD5539DFEED /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD9287DEE246626CE463AB766658E4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEFAA84C53DE264CF2D3F405114C97A0 /* camera_d@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */; };
-		D5FF7F51417C21239B6A146EF613B811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		D66A19CA4A6B8E7CF52F215C7CD7D3C8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
-		D6B2F20AD4783C6E4EF90DF0096F7800 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */; };
-		D77F7F8EDE7F9A63C689E9655BF648AF /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E52C24B9C42043657D55566B05B4018E /* CAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EFBCF8239BB976EA6A861125EAC8A673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		F4BDE66586A0112EAC6F80AE18E2B3D8 /* CPhotoAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = A65097DA08BD8A501907D092760DBD47 /* CPhotoAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF8EEED4BF462A2B2993088FD6CE93E9 /* CPhotoGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60FC49D05343A754B1DD04A0144A65B4 /* CPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		620C8D32E16D4DBC630CF3FCBCC8999C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
+		6562791CA6A862FB7238204255F1D4C3 /* camera_d@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */; };
+		6C93601D8B89F35C1D3358D7DF2D0C6E /* CPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		718967E6BAE9977872FC4B3E7505D30F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
+		72706286654AFF30C36E6EABD66835EF /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B9052B17B3667CC8EBA1FF6DC3509A7 /* CAlbumDropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F5D01FB8C3DEAAFCEF90C903E6CD7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		880D941787CE6602FA7A10E80B6FC21E /* CPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CEEF1CB7306FBA2B9BD5A4874053A65 /* CPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9133F8FFEE1C7E6938CBA3E6BB55BC81 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A3B87505449573A50C0BA329B35E5D2A /* arrow@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */; };
+		AC2EF8250D66C8BD22B71F1C87E37458 /* CAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B78AB18B64F4DDE6B5498734254887B4 /* Root.strings in Sources */ = {isa = PBXBuildFile; fileRef = B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */; };
+		BB8E7C270422F916052EC216152372EA /* CAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C92A12A25F4BEEB667261B72868F108A /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C9B7CC731B69C57327E0D2988B4578D4 /* CPhotoDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD91C307E14C040D41DA28EFEF891784 /* CPhotoAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = A65097DA08BD8A501907D092760DBD47 /* CPhotoAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F03BFCF89F9E731800884BEDB946CD /* CPhotoGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D44E858DF8169DE34199961BEC92CBE8 /* arrow@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */; };
+		D50187F50F9F20DA1E003AF3662BE3DF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D7B02F4D4E70F37D9425313F2F37B0D8 /* CPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAFDBB8B80B29225E1FC14D4182E24A3 /* gridCell_unSelect@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */; };
+		E6A9D5449A8C1CE05A7ABEAF3F8BD899 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E981EDA91C56516BA5CE735C272BC5AE /* CPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */; };
+		F15DE8288611A28ABA53D705E18346ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		F27D358356B62B04FBA27B03A2B656B8 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F649E4539E0385FB0EFE13D56008F741 /* CAlbumListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6F783C395FD7E07FC100571049E7FC1 /* camera_h@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */; };
+		FFFABC5D067AD835390AB93338269357 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +62,22 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E8ABCA0A85BF55DE6841E085ED195548;
+			remoteGlobalIDString = 43E9D697F56AAA1F5E81032C732E6015;
 			remoteInfo = SVProgressHUD;
 		};
 		729CE6EBCEEDA9A494CCE1BC724B7FE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 841FC8D626DFC6615A0C5222BD4C6997;
+			remoteGlobalIDString = AF1DF2263790D2F2A62CBD17BE543B12;
 			remoteInfo = CPhotoPicker;
+		};
+		CD4E3FC0BB29D9E2DE22F7F726FAC958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E9D697F56AAA1F5E81032C732E6015;
+			remoteInfo = SVProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -139,12 +146,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		152E5644FB1E6583EC04A22D786E434D /* Frameworks */ = {
+		2E0EC47C5A10A57A1D086ADE0768FF81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FF7F51417C21239B6A146EF613B811 /* Foundation.framework in Frameworks */,
-				D66A19CA4A6B8E7CF52F215C7CD7D3C8 /* QuartzCore.framework in Frameworks */,
+				7F5D01FB8C3DEAAFCEF90C903E6CD7AD /* Foundation.framework in Frameworks */,
+				620C8D32E16D4DBC630CF3FCBCC8999C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,13 +163,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3B376988B9126D938F5A8A77125659C /* Frameworks */ = {
+		BFC4127FD33531208F7B32BABC433563 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBCF8239BB976EA6A861125EAC8A673 /* Foundation.framework in Frameworks */,
-				62F88E9E925E6670B7DCC32D2C17C5C8 /* QuartzCore.framework in Frameworks */,
-				8331530930EBC74F5B1D3A4B895EA8C7 /* UIKit.framework in Frameworks */,
+				F15DE8288611A28ABA53D705E18346ED /* Foundation.framework in Frameworks */,
+				FFFABC5D067AD835390AB93338269357 /* QuartzCore.framework in Frameworks */,
+				718967E6BAE9977872FC4B3E7505D30F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,39 +400,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B07EB44A17D45BBF117574DB7CD4DE4 /* Headers */ = {
+		65BB5971FB2ADD94C4F9A1AA2B628F3A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A24C29536617BBAE33C6A4DD45DE29 /* SVIndefiniteAnimatedView.h in Headers */,
-				D77F7F8EDE7F9A63C689E9655BF648AF /* SVProgressAnimatedView.h in Headers */,
-				C1A394AD086A52DD4C902AD5539DFEED /* SVProgressHUD.h in Headers */,
-				8EB3C6D064F9B588EDA406829DEEBE7A /* SVRadialGradientLayer.h in Headers */,
+				F27D358356B62B04FBA27B03A2B656B8 /* SVIndefiniteAnimatedView.h in Headers */,
+				72706286654AFF30C36E6EABD66835EF /* SVProgressAnimatedView.h in Headers */,
+				23BF46DDAE14912E2223663161F5B696 /* SVProgressHUD.h in Headers */,
+				E6A9D5449A8C1CE05A7ABEAF3F8BD899 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8744564AD68F9F9EF70D6B84D1151B8C /* Headers */ = {
+		73A1CA125301CEB54BC4B1F6DB931F2F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C57551F85F140279D9D5149B6B0398 /* CAlbumDropView.h in Headers */,
-				A66947A5595C88F6FF659EC447902606 /* CAlbumListCell.h in Headers */,
-				96D8BFC1DFF157665F7034B1DBC1FA02 /* CAlbumListViewController.h in Headers */,
-				F4BDE66586A0112EAC6F80AE18E2B3D8 /* CPhotoAsset.h in Headers */,
-				980DECD876977A391B3D41F341CB1D8D /* CPhotoBrowserCell.h in Headers */,
-				B7A46D5D0E4E4168FA250A759A93B974 /* CPhotoBrowserViewController.h in Headers */,
-				BB85B22EA928B293AA70E42019315AB0 /* CPhotoDataManager.h in Headers */,
-				5816916C456F0ABC323D87F32521CBB8 /* CPhotoGridCell.h in Headers */,
-				FF8EEED4BF462A2B2993088FD6CE93E9 /* CPhotoGridViewController.h in Headers */,
-				8857F553AC572A520AE005E5DFA5F221 /* CPhotoPicker.h in Headers */,
-				8344AD443F31DEE54A50F81BC4CFEC47 /* CPickerHeader.h in Headers */,
-				78E0F80D02A08438BFE19CEDDC563AAB /* UIView+Addition.h in Headers */,
+				7B9052B17B3667CC8EBA1FF6DC3509A7 /* CAlbumDropView.h in Headers */,
+				001185DF4EB8A6207FC100B218E3DEAF /* CAlbumListCell.h in Headers */,
+				F649E4539E0385FB0EFE13D56008F741 /* CAlbumListViewController.h in Headers */,
+				CD91C307E14C040D41DA28EFEF891784 /* CPhotoAsset.h in Headers */,
+				182B9D909CCFA59B7A5EA9F54CDF5172 /* CPhotoBrowserCell.h in Headers */,
+				880D941787CE6602FA7A10E80B6FC21E /* CPhotoBrowserViewController.h in Headers */,
+				C9B7CC731B69C57327E0D2988B4578D4 /* CPhotoDataManager.h in Headers */,
+				097EBF7F961CC3A867B53BD05840386C /* CPhotoGridCell.h in Headers */,
+				D3F03BFCF89F9E731800884BEDB946CD /* CPhotoGridViewController.h in Headers */,
+				D7B02F4D4E70F37D9425313F2F37B0D8 /* CPhotoPicker.h in Headers */,
+				50777DC98C7C762256F193AA4498D68E /* CPickerHeader.h in Headers */,
+				20D8B45651F115926DC85F5A9A3243AD /* UIView+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 898557B2549C971BCE9E92A4A345ABA5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				7E436D51851962B5D77A7BBF7EF2C7D1 /* Sources */,
+				2E0EC47C5A10A57A1D086ADE0768FF81 /* Frameworks */,
+				65BB5971FB2ADD94C4F9A1AA2B628F3A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		7976DB0E7B1F4C41C8F079A3D88DE0B8 /* Pods-CPhotoDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA78E59C655ED54947FC6C8F0E34594 /* Build configuration list for PBXNativeTarget "Pods-CPhotoDemo" */;
@@ -444,38 +468,22 @@
 			productReference = 4145347ADDD455C3D49DEF8362E96C34 /* libPods-CPhotoDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		841FC8D626DFC6615A0C5222BD4C6997 /* CPhotoPicker */ = {
+		AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C30532F1097887A0F594A0C358E268E /* Build configuration list for PBXNativeTarget "CPhotoPicker" */;
+			buildConfigurationList = 114B82D61DCC90757741DB72565E45F5 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */;
 			buildPhases = (
-				34AA1E4868BB07BAB7318A4D3481E75A /* Sources */,
-				B3B376988B9126D938F5A8A77125659C /* Frameworks */,
-				8744564AD68F9F9EF70D6B84D1151B8C /* Headers */,
+				33787C276BCB3473DA487E26C4425644 /* Sources */,
+				BFC4127FD33531208F7B32BABC433563 /* Frameworks */,
+				73A1CA125301CEB54BC4B1F6DB931F2F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F39EEC34FCC01FE1F71F1B04E7EBF8B /* PBXTargetDependency */,
 			);
 			name = CPhotoPicker;
 			productName = CPhotoPicker;
 			productReference = E54AA267C3040623E76B7BF652A5A74E /* libCPhotoPicker.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E8ABCA0A85BF55DE6841E085ED195548 /* SVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC7A034842FA65704AAD0641F6CE5FBB /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
-			buildPhases = (
-				DE75765766C453FB8BD9B0425A88DCE2 /* Sources */,
-				152E5644FB1E6583EC04A22D786E434D /* Frameworks */,
-				0B07EB44A17D45BBF117574DB7CD4DE4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = 6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -499,50 +507,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				841FC8D626DFC6615A0C5222BD4C6997 /* CPhotoPicker */,
+				AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */,
 				7976DB0E7B1F4C41C8F079A3D88DE0B8 /* Pods-CPhotoDemo */,
-				E8ABCA0A85BF55DE6841E085ED195548 /* SVProgressHUD */,
+				43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		34AA1E4868BB07BAB7318A4D3481E75A /* Sources */ = {
+		33787C276BCB3473DA487E26C4425644 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A622D8D6909D096799CCE050D83BB662 /* arrow@2x.png in Sources */,
-				3FC7B09CA19C45CD985C56A96937968E /* arrow@3x.png in Sources */,
-				43ABAAE4E854D98C8A7D3DE066BD586F /* CAlbumDropView.m in Sources */,
-				E52C24B9C42043657D55566B05B4018E /* CAlbumListCell.m in Sources */,
-				3E659876F89B6A860A6011E9B21C3473 /* CAlbumListViewController.m in Sources */,
-				CEFAA84C53DE264CF2D3F405114C97A0 /* camera_d@2x.png in Sources */,
-				3D48D866B3F8EEDA0B32BCF50418BE4B /* camera_h@2x.png in Sources */,
-				55C6DC3738F8E371EF18CBAB3DE58D94 /* CPhotoAsset.m in Sources */,
-				334DC230AFB8DA5465849F72C775BB75 /* CPhotoBrowserCell.m in Sources */,
-				205758C82C84E7BCBC8B37FD32C48904 /* CPhotoBrowserViewController.m in Sources */,
-				3C560796CBDF68ACA548AE44F3520BB4 /* CPhotoDataManager.m in Sources */,
-				085A2BC88EAA7F4555152439533E9207 /* CPhotoGridCell.m in Sources */,
-				771E2241A9151F004EB54D7DEB395132 /* CPhotoGridViewController.m in Sources */,
-				0C0AB78CEF8841BE687C9A35C15A14E4 /* CPhotoPicker-dummy.m in Sources */,
-				2BB0CE4FE7BE4F31DAB9E6D48B930E23 /* CPhotoPicker.m in Sources */,
-				0B9160B82286A73D82EEE08D9FCA197C /* gridCell_select@2x.png in Sources */,
-				B31FEEA581D95B5321CE0238BCAED57E /* gridCell_unSelect@2x.png in Sources */,
-				C07AEC86C1BA8FECCEF66361244295FF /* Root.plist in Sources */,
-				350CA6CB9FB95E8DFFF7792577EE959F /* Root.strings in Sources */,
-				7B95AD21F6801D859A58B2BF4CDBC7C9 /* UIView+Addition.m in Sources */,
+				D44E858DF8169DE34199961BEC92CBE8 /* arrow@2x.png in Sources */,
+				A3B87505449573A50C0BA329B35E5D2A /* arrow@3x.png in Sources */,
+				3241211D5A62DF518C6BE0B59DDF67BC /* CAlbumDropView.m in Sources */,
+				BB8E7C270422F916052EC216152372EA /* CAlbumListCell.m in Sources */,
+				AC2EF8250D66C8BD22B71F1C87E37458 /* CAlbumListViewController.m in Sources */,
+				6562791CA6A862FB7238204255F1D4C3 /* camera_d@2x.png in Sources */,
+				F6F783C395FD7E07FC100571049E7FC1 /* camera_h@2x.png in Sources */,
+				4B9B2BB09833F12D1F105AA73FB7B451 /* CPhotoAsset.m in Sources */,
+				27A0C7E6B9E16C66A4DD0FA20545B3C0 /* CPhotoBrowserCell.m in Sources */,
+				60FC49D05343A754B1DD04A0144A65B4 /* CPhotoBrowserViewController.m in Sources */,
+				30A40532C383A58934EC4A3B8751B736 /* CPhotoDataManager.m in Sources */,
+				00BD3BE5358B605B59701C8C396DDE69 /* CPhotoGridCell.m in Sources */,
+				8CEEF1CB7306FBA2B9BD5A4874053A65 /* CPhotoGridViewController.m in Sources */,
+				E981EDA91C56516BA5CE735C272BC5AE /* CPhotoPicker-dummy.m in Sources */,
+				6C93601D8B89F35C1D3358D7DF2D0C6E /* CPhotoPicker.m in Sources */,
+				48F35A815CECC2C0568F628EA8BC0A72 /* gridCell_select@2x.png in Sources */,
+				DAFDBB8B80B29225E1FC14D4182E24A3 /* gridCell_unSelect@2x.png in Sources */,
+				0458A3D7E2FE097649419231013598C1 /* Root.plist in Sources */,
+				B78AB18B64F4DDE6B5498734254887B4 /* Root.strings in Sources */,
+				9133F8FFEE1C7E6938CBA3E6BB55BC81 /* UIView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE75765766C453FB8BD9B0425A88DCE2 /* Sources */ = {
+		7E436D51851962B5D77A7BBF7EF2C7D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				322A76EE3C1A302C2B51AB2943BC2F91 /* SVIndefiniteAnimatedView.m in Sources */,
-				0606323A267157D0D6CD09A9F7D17329 /* SVProgressAnimatedView.m in Sources */,
-				D6B2F20AD4783C6E4EF90DF0096F7800 /* SVProgressHUD-dummy.m in Sources */,
-				0AE449A3547B1E074331D5B9E823AF3F /* SVProgressHUD.m in Sources */,
-				20AA30104BEF5B990B7F3FF310396140 /* SVRadialGradientLayer.m in Sources */,
+				D50187F50F9F20DA1E003AF3662BE3DF /* SVIndefiniteAnimatedView.m in Sources */,
+				308486162E2E40AD1963DDF652C61BD0 /* SVProgressAnimatedView.m in Sources */,
+				52826059EC3E34BB8017459D264A83D0 /* SVProgressHUD-dummy.m in Sources */,
+				074AC3E0696E9E463E85B6F209524484 /* SVProgressHUD.m in Sources */,
+				C92A12A25F4BEEB667261B72868F108A /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,14 +568,20 @@
 		1409AD8EADBD4C85D7E1AFF9E61FA467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CPhotoPicker;
-			target = 841FC8D626DFC6615A0C5222BD4C6997 /* CPhotoPicker */;
+			target = AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */;
 			targetProxy = 729CE6EBCEEDA9A494CCE1BC724B7FE8 /* PBXContainerItemProxy */;
 		};
 		536BECF8F10B9D4F278BEA740483B992 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = E8ABCA0A85BF55DE6841E085ED195548 /* SVProgressHUD */;
+			target = 43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */;
 			targetProxy = 1E9D4F3FB47569867CF471B31119BB08 /* PBXContainerItemProxy */;
+		};
+		8F39EEC34FCC01FE1F71F1B04E7EBF8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */;
+			targetProxy = CD4E3FC0BB29D9E2DE22F7F726FAC958 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -584,9 +598,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		11C4559D8346E416C763684C287E637D /* Debug */ = {
+		0BDA086A199489CABA4B8AD1349B5150 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
+			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -594,8 +608,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -606,6 +620,29 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		23674F0E64C177775B0F5D97799270BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		2FC5A6C42013F502B230F574938B94AB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -629,29 +666,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		4CEABF92A5DD9EC2796875FE736A5FA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -694,6 +708,52 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8592471C71C1A67AA25A6340C7E360EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9589BC484748E6053FDD0EC94ABD9DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -760,55 +820,18 @@
 			};
 			name = Release;
 		};
-		E2CEEC7A8F7B6FD181FEDA8A69111775 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FDD375C870AB39166CC8E9FA9CCB9EBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		114B82D61DCC90757741DB72565E45F5 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9589BC484748E6053FDD0EC94ABD9DBA /* Debug */,
+				23674F0E64C177775B0F5D97799270BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -827,20 +850,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C30532F1097887A0F594A0C358E268E /* Build configuration list for PBXNativeTarget "CPhotoPicker" */ = {
+		898557B2549C971BCE9E92A4A345ABA5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11C4559D8346E416C763684C287E637D /* Debug */,
-				E2CEEC7A8F7B6FD181FEDA8A69111775 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC7A034842FA65704AAD0641F6CE5FBB /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDD375C870AB39166CC8E9FA9CCB9EBA /* Debug */,
-				4CEABF92A5DD9EC2796875FE736A5FA0 /* Release */,
+				0BDA086A199489CABA4B8AD1349B5150 /* Debug */,
+				8592471C71C1A67AA25A6340C7E360EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

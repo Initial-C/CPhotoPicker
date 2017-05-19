@@ -75,7 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "arrow@3x.png"; sourceTree = "<group>"; };
+		061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "arrow@3x.png"; sourceTree = "<group>"; };
 		1A93F24F79E0D0BDD8479BF216DA8A21 /* Pods-CPhotoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPhotoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumDropView.h; sourceTree = "<group>"; };
 		221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		2F6C4154092859FF89EF18A1499B36F5 /* Pods-CPhotoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPhotoDemo-dummy.m"; sourceTree = "<group>"; };
 		346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListCell.h; sourceTree = "<group>"; };
 		3AB6E1E1CB6774858DA1F2CF6234E8D0 /* Pods-CPhotoDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPhotoDemo-frameworks.sh"; sourceTree = "<group>"; };
-		4145347ADDD455C3D49DEF8362E96C34 /* libPods-CPhotoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CPhotoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4145347ADDD455C3D49DEF8362E96C34 /* libPods-CPhotoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CPhotoDemo.a"; path = "libPods-CPhotoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridViewController.m; sourceTree = "<group>"; };
 		4870E0EF3AF6486A80CB4D24C53A443F /* Pods-CPhotoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPhotoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridViewController.h; sourceTree = "<group>"; };
@@ -92,11 +92,11 @@
 		54BA8E5826E9CF81D413222DE15DC773 /* CPickerSource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = CPickerSource.bundle; sourceTree = "<group>"; };
 		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListViewController.m; sourceTree = "<group>"; };
-		60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "camera_d@2x.png"; sourceTree = "<group>"; };
+		60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "camera_d@2x.png"; sourceTree = "<group>"; };
 		64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CPhotoPicker-dummy.m"; sourceTree = "<group>"; };
 		7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserCell.m; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoDataManager.h; sourceTree = "<group>"; };
 		86E3DC48E40F8C3C553801CB0080D74D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoAsset.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BC573DB45632295E16B9BFB85513810 /* Pods-CPhotoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPhotoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoPicker.m; sourceTree = "<group>"; };
@@ -112,13 +112,13 @@
 		A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoDataManager.m; sourceTree = "<group>"; };
 		A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumDropView.m; sourceTree = "<group>"; };
 		ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserViewController.m; sourceTree = "<group>"; };
-		B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "gridCell_select@2x.png"; sourceTree = "<group>"; };
-		B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Root.strings; path = en.lproj/Root.strings; sourceTree = "<group>"; };
+		B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "gridCell_select@2x.png"; sourceTree = "<group>"; };
+		B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Root.strings; path = en.lproj/Root.strings; sourceTree = "<group>"; };
 		B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoPicker.h; sourceTree = "<group>"; };
 		BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListViewController.h; sourceTree = "<group>"; };
 		C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPhotoPicker.xcconfig; sourceTree = "<group>"; };
 		C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserCell.h; sourceTree = "<group>"; };
 		CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserViewController.h; sourceTree = "<group>"; };
 		D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
@@ -127,12 +127,12 @@
 		DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E54AA267C3040623E76B7BF652A5A74E /* libCPhotoPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCPhotoPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54AA267C3040623E76B7BF652A5A74E /* libCPhotoPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCPhotoPicker.a; path = libCPhotoPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6420D73B137C9391B20730953D4C502 /* Pods-CPhotoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPhotoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "gridCell_unSelect@2x.png"; sourceTree = "<group>"; };
-		F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "camera_h@2x.png"; sourceTree = "<group>"; };
+		EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "gridCell_unSelect@2x.png"; sourceTree = "<group>"; };
+		F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "camera_h@2x.png"; sourceTree = "<group>"; };
 		F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListCell.m; sourceTree = "<group>"; };
 		F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridCell.m; sourceTree = "<group>"; };
 		F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridCell.h; sourceTree = "<group>"; };
@@ -201,6 +201,7 @@
 			children = (
 				54BA8E5826E9CF81D413222DE15DC773 /* CPickerSource.bundle */,
 			);
+			name = ImageSource;
 			path = ImageSource;
 			sourceTree = "<group>";
 		};
@@ -209,6 +210,7 @@
 			children = (
 				2BC6DB41EC64AB34712D742D1A07E5D9 /* ImageSource */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -265,6 +267,7 @@
 				035CB6C836B78EB37C4E6C442FF8BB1E /* Resources */,
 				BDE1D145F4A334224EB232EECAD63B61 /* Support Files */,
 			);
+			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -299,12 +302,12 @@
 				7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */,
 				CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */,
 				ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */,
-				4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */,
-				438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */,
 				7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */,
 				A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */,
 				F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */,
 				F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */,
+				4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */,
+				438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */,
 				B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */,
 				A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */,
 				7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */,
@@ -312,6 +315,7 @@
 				221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */,
 				D2A32DC5276DA335189A3978C02FE16F /* ImageSource */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -327,6 +331,7 @@
 				D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */,
 				AB3834681AEBD2D6D374ACDE7BFD847D /* Root.strings */,
 			);
+			name = CPickerSource.bundle;
 			path = CPickerSource.bundle;
 			sourceTree = "<group>";
 		};
@@ -356,6 +361,7 @@
 			children = (
 				BDB49DCFD5A3C3C897D1373450F139F6 /* CPickerSource.bundle */,
 			);
+			name = ImageSource;
 			path = ImageSource;
 			sourceTree = "<group>";
 		};

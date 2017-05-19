@@ -8,7 +8,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   CPhotoPicker:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   CPhotoPicker: c42eb203681375ca49a97b18655c8bc8a2691807

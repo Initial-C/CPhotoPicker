@@ -120,7 +120,7 @@
     
     {
         UIButton *sendBtn = [UIButton buttonWithType: UIButtonTypeCustom];
-        NSString *str = [NSString stringWithFormat:  @"完成(%ld/%ld)",_selecteAssets.count,_maxSelectCount];
+        NSString *str = [NSString stringWithFormat:  @"完成(%zi/%zi)",_selecteAssets.count,_maxSelectCount];
         sendBtn.enabled = NO;
         [sendBtn setTitle: str forState: UIControlStateNormal];
         [sendBtn addTarget: self action: @selector(sendBtnClick) forControlEvents: UIControlEventTouchUpInside];
@@ -225,7 +225,7 @@
     
     _rightSelectBtn.selected = hited;
 
-    NSString *str = [NSString stringWithFormat:  @"完成(%ld/%ld)",_selecteAssets.count,_maxSelectCount];
+    NSString *str = [NSString stringWithFormat:  @"完成(%zi/%zi)",_selecteAssets.count,_maxSelectCount];
     _sendBtn.enabled = _selecteAssets.count > 0 ? YES : NO;
     [_sendBtn setTitle: str forState: UIControlStateNormal];
 }

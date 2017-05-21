@@ -48,7 +48,7 @@ static CGFloat const kAlubmImgViewW = 50;
         
         NSInteger albumPhotoCount = [dataDic[kPDMAlbumInfoCountKey] integerValue];
         
-        NSString *fullStr = [NSString stringWithFormat:@"%@ (%ld)", albumName, albumPhotoCount];
+        NSString *fullStr = [NSString stringWithFormat:@"%@ (%zi)", albumName, albumPhotoCount];
         
         NSMutableAttributedString *mutAttrString = [[NSMutableAttributedString alloc] initWithString: fullStr];
         

@@ -41,7 +41,7 @@
 }
 
 - (void)showPhotoListVCWithController:(UIViewController *)controller  maxSelectCount:(NSUInteger)maxCount completion:(void (^)(NSArray * , BOOL isImgType))completion {
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
 //
 //        CAlbumListViewController * albumListVC = [[CAlbumListViewController alloc] init];

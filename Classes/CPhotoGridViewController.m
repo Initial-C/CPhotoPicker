@@ -162,7 +162,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     {
         UIButton *sureBtn = [UIButton buttonWithType: UIButtonTypeCustom];
         
-        NSString *str = [NSString stringWithFormat:  @"完成(0/%ld)",_maxSelectCount];
+        NSString *str = [NSString stringWithFormat:  @"完成(0/%zi)",_maxSelectCount];
         [sureBtn setTitle: str forState: UIControlStateNormal];
         [sureBtn addTarget: self action: @selector(sureBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [tabbarView addSubview: sureBtn];
@@ -220,7 +220,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         [_browserBtn setTitleColor: [UIColor lightGrayColor] forState: UIControlStateNormal];
     }
     
-    NSString *str = [NSString stringWithFormat:  @"完成(%ld/%ld)",_selectedArray.count,_maxSelectCount];
+    NSString *str = [NSString stringWithFormat:  @"完成(%zi/%zi)",_selectedArray.count,_maxSelectCount];
     [_sureBtn setTitle: str forState: UIControlStateNormal];
 }
 
@@ -451,7 +451,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.item >= 1) {
         [self showBrowserVCWithDataArray: _dataArray selectIndex: indexPath.item - 1];
-    } else if (indexPath.item == nil || indexPath.item == 0) {
+    } else if (indexPath.item == 0) {
         [self openCamera];
     }
     

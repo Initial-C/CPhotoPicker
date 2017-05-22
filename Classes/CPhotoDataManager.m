@@ -7,7 +7,6 @@
 //
 
 #import "CPhotoDataManager.h"
-#import <AssetsLibrary/AssetsLibrary.h>
 #import <ImageIO/ImageIO.h>
 
 NSString *  const kPDMAlbumInfoImgKey = @"PDMAlbumInfoImgKey";
@@ -301,19 +300,10 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
 }
 
 + (NSString *)getAssetIdentifier:(id)asset {
-    if ([CPhotoDataManager getiOSVersion] >= __IPHONE_8_0) {
-        PHAsset *phAsset = (PHAsset *)asset;
-        return phAsset.localIdentifier;
-    } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        ALAsset *alAsset = (ALAsset *)asset;
-        NSURL *assetUrl = [alAsset valueForProperty:ALAssetPropertyAssetURL];
-#pragma clang diagnostic pop
-        return assetUrl.absoluteString;
-    }
-}
 
+    PHAsset *phAsset = (PHAsset *)asset;
+    return phAsset.localIdentifier;
+}
 - (NSUInteger)getAlbumsCount {
     
     return _albumsArray.count;

@@ -52,7 +52,6 @@
     }];
 }
 - (UIImage *)resizeImage:(UIImage *)oriImage {
-    // 并把它设置成为当前正在使用的context
     CGSize newSize = oriImage.size;
     if (newSize.width > 0 && newSize.width < 750) {
         return oriImage;
@@ -60,24 +59,11 @@
         newSize = CGSizeMake(750, newSize.height * 750 / newSize.width);
     }
     UIGraphicsBeginImageContext(newSize);
-    
-    // 绘制改变大小的图片
-    
     [oriImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    
-    // 从当前context中创建一个改变大小后的图片
-    
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    // 使当前的context出堆栈
-    
     UIGraphicsEndImageContext();
-    
-    // 返回新的改变大小后的图片
-    
     return scaledImage;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

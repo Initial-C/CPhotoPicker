@@ -1,5 +1,5 @@
 PODS:
-  - CPhotoPicker (0.0.2):
+  - CPhotoPicker (0.0.3):
     - SVProgressHUD (~> 2.0.3)
   - SVProgressHUD (2.0.4)
 
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CPhotoPicker: 5725e6bf133970ddb4131e72099c4c65f137e9df
+  CPhotoPicker: 3e2db12443c769ae591b56fa2a068e0581085b9e
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
 PODFILE CHECKSUM: 4bcbb7646fd24652f483da762095afe225cd03f8

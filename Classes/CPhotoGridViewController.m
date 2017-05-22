@@ -499,18 +499,16 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
 - (void)openCamera {
     [CPhotoDataManager isCameraVisible:^(AVAuthorizationStatus status) {
-        if (status == AVAuthorizationStatusRestricted || status == AVAuthorizationStatusDenied) {
-            [SVProgressHUD showInfoWithStatus:kLimitCameraTips];
+        if (status == AVAuthorizationStatusAuthorized) {
+            [self pickerControllerFromSourceType:UIImagePickerControllerSourceTypeCamera];
+        } else if (status == AVAuthorizationStatusNotDetermined) {
+            [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+                if (granted == YES) {
+                    [self pickerControllerFromSourceType:UIImagePickerControllerSourceTypeCamera];
+                }
+            }];
         } else {
-            if (status == AVAuthorizationStatusNotDetermined) {
-                [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                    if (granted == YES) {
-                        [self pickerControllerFromSourceType:UIImagePickerControllerSourceTypeCamera];
-                    }
-                }];
-            }else if (status == AVAuthorizationStatusAuthorized) {
-                [self pickerControllerFromSourceType:UIImagePickerControllerSourceTypeCamera];
-            }
+            [SVProgressHUD showInfoWithStatus:kLimitCameraTips];
         }
     }];
 }

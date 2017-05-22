@@ -20,7 +20,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
 {
     BOOL _usePhotoKit;
     
-    ALAssetsLibrary	* _assetsLibrary;
+    PHPhotoLibrary	* _assetsLibrary;
     
     NSMutableArray  * _photosArray; //当前相册数据 PHAsset 或者 AlAsset
     NSMutableArray  * _albumsArray; //全部相册列表数据 PHAssetCollection 或者 ALAssetsGroup
@@ -57,7 +57,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         
         if (!_usePhotoKit) {
             
-            _assetsLibrary = [[ALAssetsLibrary alloc] init];
+            _assetsLibrary = [[PHPhotoLibrary alloc] init];
         }
     }
     return self;
@@ -126,36 +126,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         }];
         
         result(_albumsArray);
-        
-    } else {
-        
-        void (^assetGroupEnumerator)(ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop) {
-            
-            [group setAssetsFilter:[ALAssetsFilter allPhotos]];
-            
-            if (group == nil) {
-                
-                if (_bReverse)
-                    
-                    _albumsArray = [[NSMutableArray alloc] initWithArray:[[_albumsArray reverseObjectEnumerator] allObjects]];
-                
-                result(_albumsArray);
-                
-                return;
-                
-            } else if (group.numberOfAssets > 0) {
-                
-                [_albumsArray addObject:group];
-            }
-        };
-        
-        void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
-            
-            NSLog(@"asset helper Error : %@", [error description]);
-        };
-        
-        [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:assetGroupEnumerator failureBlock:assetGroupEnumberatorFailure];
-        
     }
 }
 
@@ -186,33 +156,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         
         result(_photosArray);
         
-    } else {
-        
-        if (![albumData isKindOfClass: [ALAssetsGroup class]]) {
-            
-            result(nil);
-            
-            return;
-        }
-        
-        [albumData setAssetsFilter:[ALAssetsFilter allPhotos]];
-        
-        [albumData enumerateAssetsUsingBlock:^(ALAsset *alPhoto, NSUInteger index, BOOL *stop) {
-            
-            if(alPhoto == nil) {
-                
-                if (_bReverse) {
-                    
-                    _photosArray = [[NSMutableArray alloc] initWithArray:[[_photosArray reverseObjectEnumerator] allObjects]];
-                }
-                
-                result(_photosArray);
-                
-                return;
-            }
-            
-            [_photosArray addObject:alPhoto];
-        }];
     }
 }
 
@@ -248,47 +191,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
             result(_photosArray);
         }
         
-    } else {
-        
-        NSMutableArray *savedPhotoList = [NSMutableArray array];
-        
-        void (^assetGroupEnumerator)(ALAssetsGroup *, BOOL *) = ^(ALAssetsGroup *group, BOOL *stop) {
-            
-            if ([[group valueForProperty:@"ALAssetsGroupPropertyType"] intValue] == ALAssetsGroupSavedPhotos) {
-                
-                [group setAssetsFilter: [ALAssetsFilter allPhotos]];
-                
-                [group enumerateAssetsUsingBlock:^(ALAsset *alPhoto, NSUInteger index, BOOL *stop) {
-                    
-                    if(alPhoto == nil) {
-                        
-                        if (_bReverse) {
-                            
-                            NSArray * tempArray = [savedPhotoList copy];
-                            
-                            [savedPhotoList removeAllObjects];
-                            
-                            [savedPhotoList addObjectsFromArray: [[tempArray reverseObjectEnumerator] allObjects]];
-                        }
-                        
-                        _photosArray = [savedPhotoList mutableCopy];
-                        
-                        result(_photosArray);
-                        
-                        return;
-                    }
-                    
-                    [savedPhotoList addObject:alPhoto];
-                }];
-            }
-        };
-        
-        void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *err) {
-            
-            NSLog(@"Asset read Error : %@", [err description]);
-        };
-        
-        [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:assetGroupEnumerator failureBlock:assetGroupEnumberatorFailure];
     }
 }
 
@@ -323,36 +225,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
             }];
         }];
         
-    } else {
-        
-        [self fetchCameraRollPhotoList:^(NSArray * alAssets) {
-            
-            [alAssets enumerateObjectsUsingBlock:^(ALAsset * asset, NSUInteger idx, BOOL * _Nonnull stop) {
-                
-                NSDate * photoDate =  [asset valueForProperty: @"ALAssetPropertyDate"];
-                
-                NSDate * currentDate = [NSDate date];
-                
-                if ([self isWithinDays: 1 date1: photoDate date2: currentDate]) {
-                    
-                    [tempArray addObject: asset];
-                }
-                
-                if (asset == nil) {
-                    
-                    _photosArray = [tempArray mutableCopy];
-                    
-                    if (_bReverse) {
-                        
-                        _photosArray = [[NSMutableArray alloc] initWithArray:[[_photosArray reverseObjectEnumerator] allObjects]];
-                    }
-                    
-                    result(_photosArray);
-                    
-                    return ;
-                }
-            }];
-        }];
     }
 }
 
@@ -391,38 +263,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
             }];
         }];
         
-    } else {
-        
-        [self fetchCameraRollPhotoList:^(NSArray * alAssets) {
-            
-            [alAssets enumerateObjectsUsingBlock:^(ALAsset * asset, NSUInteger idx, BOOL * _Nonnull stop) {
-                
-                ALAssetRepresentation* image_representation = [asset defaultRepresentation];
-                
-                NSString* name = [image_representation filename];
-                
-                name = [name lowercaseString];
-                
-                if ([name hasSuffix:@".gif"]) {
-                    
-                    [tempArray addObject: asset];
-                }
-                
-                if (asset == nil) {
-                    
-                    _photosArray = [tempArray mutableCopy];
-                    
-                    if (_bReverse) {
-                        
-                        _photosArray = [[NSMutableArray alloc] initWithArray:[[_photosArray reverseObjectEnumerator] allObjects]];
-                    }
-                    
-                    result(_photosArray);
-                    
-                    return ;
-                }
-            }];
-        }];
     }
 }
 
@@ -441,11 +281,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         date2Comp = [calendar components: (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate: date2];
         
         
-    } else {
-        
-        date1Comp = [calendar components: (NSYearCalendarUnit | NSMonthCalendarUnit |NSDayCalendarUnit) fromDate: date1];
-        
-        date2Comp = [calendar components: (NSYearCalendarUnit | NSMonthCalendarUnit |NSDayCalendarUnit) fromDate: date2];
     }
     
     if ( [date1Comp day] <= [date2Comp day] &&  [date1Comp day] + days >= ([date2Comp day]) &&  [date1Comp month] == [date2Comp month] && [date1Comp year] == [date2Comp year]) {
@@ -538,23 +373,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
             
         }
         
-    } else {
-        
-        ALAssetsGroup * group = albumData;
-        
-        NSString * albumName = [group valueForProperty: ALAssetsGroupPropertyName];
-        
-        [mutDic setObject: albumName forKey: kPDMAlbumInfoNameKey];
-        
-        NSNumber * albumPhotosCount = [NSNumber numberWithInteger: [group numberOfAssets]];
-        
-        [mutDic setObject: albumPhotosCount forKey: kPDMAlbumInfoCountKey];
-        
-        UIImage * thumbImg = [UIImage imageWithCGImage:[group posterImage]];
-        
-        [mutDic setObject: thumbImg forKey: kPDMAlbumInfoImgKey];
-        
-        result(mutDic);
     }
 }
 
@@ -589,33 +407,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         
         authorazitionStatus(photoRightStatus);
         
-    }else {
-        ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
-        
-        switch (author) {
-            case ALAuthorizationStatusNotDetermined: {
-                photoRightStatus = PhotoAuthorizationStatusNotDetermined;
-            }
-                break;
-                
-            case ALAuthorizationStatusRestricted: {
-                photoRightStatus = PhotoAuthorizationStatusRestricted;
-            }
-                break;
-                
-            case ALAuthorizationStatusDenied: {
-                photoRightStatus = PhotoAuthorizationStatusDenied;
-
-            }
-                break;
-                
-            case ALAuthorizationStatusAuthorized: {
-                photoRightStatus = PhotoAuthorizationStatusAuthorized;
-
-            }
-                break;
-        }
-        authorazitionStatus(photoRightStatus);
     }
 }
 
@@ -731,75 +522,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                 break;
         }
         
-    } else {
-        
-        ALAsset * alAsset = (ALAsset *)asset;
-        
-        CGImageRef iRef = nil;
-        
-        switch (nType) {
-                
-            case ePhotoResolutionTypeThumb: {
-                
-                iRef = [alAsset thumbnail];
-            }
-                break;
-                
-            case ePhotoResolutionTypeScreenSize: {
-                
-                iRef = [alAsset.defaultRepresentation fullScreenImage];
-            }
-                break;
-                
-            case ePhotoResolutionTypeOrigin: {
-                
-                NSString *strXMP = alAsset.defaultRepresentation.metadata[@"AdjustmentXMP"];
-                
-                NSData *dXMP = [strXMP dataUsingEncoding:NSUTF8StringEncoding];
-                
-                if (strXMP == nil) {
-                    
-                    UIImage * img = [UIImage imageWithCGImage: alAsset.defaultRepresentation.fullResolutionImage scale:1.0f orientation: alAsset.defaultRepresentation.orientation];
-                    
-                    result(img);
-                    
-                    return;
-                }
-                
-                CIImage *image = [CIImage imageWithCGImage: alAsset.defaultRepresentation.fullResolutionImage];
-                
-                NSError *error = nil;
-                
-                NSArray *filterArray = [CIFilter filterArrayFromSerializedXMP: dXMP inputImageExtent: image.extent error: &error];
-                
-                if (error) {
-                    
-                    NSLog(@"Error during CIFilter creation: %@", [error localizedDescription]);
-                }
-                
-                for (CIFilter *filter in filterArray) {
-                    
-                    [filter setValue:image forKey:kCIInputImageKey];
-                    
-                    image = [filter outputImage];
-                }
-                
-                iRef = [self.context createCGImage:image fromRect:image.extent];
-                
-                UIImage* img = [UIImage imageWithCGImage: iRef scale:1.0f orientation: (UIImageOrientation)alAsset.defaultRepresentation.orientation];
-                
-                CGImageRelease(iRef);
-                
-                result(img);
-                
-                return;
-            }
-                break;
-        }
-        
-        UIImage * img = [[UIImage alloc] initWithCGImage:iRef];
-        
-        result(img);
     }
     
 }
@@ -825,45 +547,21 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
 }
 
 + (NSString *)getImageNameFromAsset:(id)asset {
-    
-    if ([CPhotoDataManager getiOSVersion] >= __IPHONE_8_0) {
-        PHAsset * phAsset = (PHAsset *)asset;
-        
-        return [phAsset valueForKey: @"filename"];
-
-    } else {
-        ALAssetRepresentation* image_representation = [(ALAsset *)asset defaultRepresentation];
-        
-        NSString* name = [image_representation filename];
-        
-        return name;
-    }
+    PHAsset * phAsset = (PHAsset *)asset;
+    NSString *name = [phAsset valueForKey: @"filename"];
+    return name;
 }
 
-+ (CGSize) getImageSizeFromAsset:(id)asset {
-    
-    if ([CPhotoDataManager getiOSVersion] >= __IPHONE_8_0) {
++ (CGSize)getImageSizeFromAsset:(id)asset {
+    if (![asset isKindOfClass: [PHAsset class]]) {
         
-        if (![asset isKindOfClass: [PHAsset class]]) {
-            
-            return CGSizeMake(0, 0);
-        }
-        
-        PHAsset * phAsset = (PHAsset *)asset;
-        
-        return CGSizeMake(phAsset.pixelWidth / [UIScreen mainScreen].scale, phAsset.pixelHeight / [UIScreen mainScreen].scale);
-        
-        
-    } else {
-        
-        if (![asset isKindOfClass: [ALAsset class]]) {
-            return CGSizeMake(0, 0);
-        }
-        
-        ALAssetRepresentation * representation = [(ALAsset *)asset defaultRepresentation];
-        CGSize imageSize = [representation dimensions];
-        return imageSize;
+        return CGSizeMake(0, 0);
     }
+    
+    PHAsset * phAsset = (PHAsset *)asset;
+    
+    CGSize size = CGSizeMake(phAsset.pixelWidth / [UIScreen mainScreen].scale, phAsset.pixelHeight / [UIScreen mainScreen].scale);
+    return size;
 }
 
 + (void)requestAuthorization:(void (^)(PhotoAuthorizationStatus))authorizationStatus {
@@ -915,25 +613,6 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                     }
                 }
             });
-        }];
-    } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        [_assetsLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation: image.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
-#pragma clang diagnostic pop
-            if (error) {
-                NSLog(@"保存图片失败:%@",error.localizedDescription);
-                if (completion) {
-                    completion(error);
-                }
-            } else {
-                // 多给系统0.5秒的时间，让系统去更新相册数据
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    if (completion) {
-                        completion(nil);
-                    }
-                });
-            }
         }];
     }
 }

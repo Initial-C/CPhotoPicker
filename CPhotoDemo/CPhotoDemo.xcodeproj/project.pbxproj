@@ -355,6 +355,16 @@
 				INFOPLIST_FILE = CPhotoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CPhotoPicker\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imust.cphotopicker.CPhotoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,6 +379,16 @@
 				INFOPLIST_FILE = CPhotoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CPhotoPicker\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imust.cphotopicker.CPhotoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

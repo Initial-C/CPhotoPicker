@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <CPhotoPicker.h>
-#import <CPhotoDataManager.h>
+#import "CPhotoDataManager.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *pickerBtn;

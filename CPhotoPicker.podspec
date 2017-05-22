@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
 s.name             = 'CPhotoPicker'
-s.version          = '0.0.3'
+s.version          = '0.0.5'
 s.summary          = 'This a short description of CPhotoPicker.'
 s.description      = <<-DESC
 TODO: It is easy to use, support for custom pop tips.
@@ -19,8 +19,8 @@ s.source           = { :git => 'https://github.com/Initial-C/CPhotoPicker.git', 
 s.ios.deployment_target = '9.0'
 s.requires_arc = true
 
-s.source_files = 'Classes/**/*'
-s.resources = 'Classes/ImageSource/*.{png,xib,nib,bundle,mov}'
+s.source_files = 'Classes/*.{h,m}'
+s.resources = 'Classes/ImageSource/CPickerSource.bundle'
 s.public_header_files = 'Classes/*.h'
 s.dependency 'SVProgressHUD', '~> 2.0.3'
 s.frameworks = 'UIKit', 'QuartzCore'

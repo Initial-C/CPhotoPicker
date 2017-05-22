@@ -7,54 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001185DF4EB8A6207FC100B218E3DEAF /* CAlbumListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BD3BE5358B605B59701C8C396DDE69 /* CPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0458A3D7E2FE097649419231013598C1 /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */; };
-		074AC3E0696E9E463E85B6F209524484 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		097EBF7F961CC3A867B53BD05840386C /* CPhotoGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		182B9D909CCFA59B7A5EA9F54CDF5172 /* CPhotoBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20D8B45651F115926DC85F5A9A3243AD /* UIView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23BF46DDAE14912E2223663161F5B696 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD9287DEE246626CE463AB766658E4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27A0C7E6B9E16C66A4DD0FA20545B3C0 /* CPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		308486162E2E40AD1963DDF652C61BD0 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		30A40532C383A58934EC4A3B8751B736 /* CPhotoDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3241211D5A62DF518C6BE0B59DDF67BC /* CAlbumDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		00C6C21D157F9CA6E47BA88622AB13D1 /* CPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C73C9BE2996DDC46B07E9593AF67967 /* CPhotoAsset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0A5113370755E8C3B2022B6AEEFF40C5 /* CPickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 253A1178F4EBC70B1C0F620A031ECA60 /* CPickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D766F141C5E4BCD5FE5A1FF850AA4AF /* CPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC05FC81815FB89364B671E0FA9B53D /* CPhotoPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		175C9F60A08AF2E17BDE1AEF0E52817B /* CPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D11A390470E244E269851D144B499658 /* CPhotoBrowserCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1D24FE7FE31BE9EBEF05F6EE2AF0F9DB /* CAlbumDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = C574FFEBC59B230B325ED0A06F90B32E /* CAlbumDropView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1EDAC0C1FA05EFF96108E10D68BFBD03 /* CPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5287CD2641601564FB85698D377C4FEE /* CPhotoPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204A46F3F972E29C40C08D86573C683E /* CAlbumListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 02618E7D46DA1637EEE0B7C57D8C0968 /* CAlbumListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2500AEB14DF3E59934708845FD8D9EB2 /* CAlbumDropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6B39FC78952C311752FFC0D8CA0428 /* CAlbumDropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2623F9B52E7FD420C89E2473EAF73899 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3312BB50CB803FDCCA8FDEC4D5631AB2 /* Pods-CPhotoDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C4154092859FF89EF18A1499B36F5 /* Pods-CPhotoDemo-dummy.m */; };
-		48F35A815CECC2C0568F628EA8BC0A72 /* gridCell_select@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */; };
-		4B9B2BB09833F12D1F105AA73FB7B451 /* CPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		50777DC98C7C762256F193AA4498D68E /* CPickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52826059EC3E34BB8017459D264A83D0 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */; };
+		37CA26C86068108AE41854037A1697BA /* CPhotoGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A839A13D1D3D30562241FDDCE8A36C4 /* CPhotoGridCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CB23E20D012EBE90749FBE926E6DDD2 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		407C79583918BE29C18A26574D594521 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		50B04F301B83FE0413B7C5D059CAF4C2 /* UIView+Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D0044BD65133397B4E98491A2680D1 /* UIView+Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F86ED8D67EE5D42378E97B69262910 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */; };
+		5A56E10717130208FC326FF2F5EAF518 /* CAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555AC286759C6A7B24452700AF88D01 /* CAlbumListViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5AD2B46066A0527BDACE07BD09B15F8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		60FC49D05343A754B1DD04A0144A65B4 /* CPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		620C8D32E16D4DBC630CF3FCBCC8999C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
-		6562791CA6A862FB7238204255F1D4C3 /* camera_d@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */; };
-		6C93601D8B89F35C1D3358D7DF2D0C6E /* CPhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		718967E6BAE9977872FC4B3E7505D30F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		72706286654AFF30C36E6EABD66835EF /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B9052B17B3667CC8EBA1FF6DC3509A7 /* CAlbumDropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F5D01FB8C3DEAAFCEF90C903E6CD7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		880D941787CE6602FA7A10E80B6FC21E /* CPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CEEF1CB7306FBA2B9BD5A4874053A65 /* CPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9133F8FFEE1C7E6938CBA3E6BB55BC81 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A3B87505449573A50C0BA329B35E5D2A /* arrow@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */; };
-		AC2EF8250D66C8BD22B71F1C87E37458 /* CAlbumListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B78AB18B64F4DDE6B5498734254887B4 /* Root.strings in Sources */ = {isa = PBXBuildFile; fileRef = B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */; };
-		BB8E7C270422F916052EC216152372EA /* CAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C92A12A25F4BEEB667261B72868F108A /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C9B7CC731B69C57327E0D2988B4578D4 /* CPhotoDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD91C307E14C040D41DA28EFEF891784 /* CPhotoAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = A65097DA08BD8A501907D092760DBD47 /* CPhotoAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3F03BFCF89F9E731800884BEDB946CD /* CPhotoGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D44E858DF8169DE34199961BEC92CBE8 /* arrow@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */; };
-		D50187F50F9F20DA1E003AF3662BE3DF /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D7B02F4D4E70F37D9425313F2F37B0D8 /* CPhotoPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAFDBB8B80B29225E1FC14D4182E24A3 /* gridCell_unSelect@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */; };
-		E6A9D5449A8C1CE05A7ABEAF3F8BD899 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E981EDA91C56516BA5CE735C272BC5AE /* CPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */; };
-		F15DE8288611A28ABA53D705E18346ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		F27D358356B62B04FBA27B03A2B656B8 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F649E4539E0385FB0EFE13D56008F741 /* CAlbumListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6F783C395FD7E07FC100571049E7FC1 /* camera_h@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */; };
-		FFFABC5D067AD835390AB93338269357 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
+		5BC6D433D2F39052CB54E7C23E96B8FD /* CAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EB4B1B7B7D1AB4EDE67678CE5B303 /* CAlbumListCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F3579CE1D488FBED45110D83DCD34CE /* CPhotoDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5C6D030118B11FE1C0EE1F09C5AA21 /* CPhotoDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B97283CF98E9B7520B8A2B2B3F298A1 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9293C69C2618E7DEB78CEF6568DE58 /* UIView+Addition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7607A17A90D25FDB6EA8B082B65F0DF5 /* CPhotoDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E4BF4A1CC087E3997C4A6A283F27FB /* CPhotoDataManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B327974738FAC816F1260F6C22DEB8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
+		81A3F3ADFC111FD2B3FB667E5AD9D544 /* CPhotoGridViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 747418AF3828E51C198A7DDD4B09C951 /* CPhotoGridViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		851BBBCB7F4EB2205C88A3638217B24E /* CPhotoGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C7E1D362752DE3F403BBCB16E24359 /* CPhotoGridViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85485511199A573257073F04C55EB837 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8ED4B1E0632A54EAFBB95BC900D26B17 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94231BABE490E8B3339FA8B2357F664B /* CPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D304028749422F15D26FA2F6F896CB2F /* CPhotoBrowserViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9829CB00DA4BE19E12A578C694984C33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		AA54295A14870EA4E1A930AFC4549A92 /* CAlbumListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 173D6F9B1AB54C523214A351F4E64A76 /* CAlbumListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B04C91F7935CE72175880F4D79565374 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD9287DEE246626CE463AB766658E4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B522878CCB014524B4A24907B320475D /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C446EADE34CDB9A76BBF6BD9FC4C5708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		CCCCF5D5599AA7FED3C44D85D10D6C87 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF2928126C17E8A277753ED8BEAD3A04 /* CPhotoPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E86D59ECBD5F0D50043AB874FB964A /* CPhotoPicker-dummy.m */; };
+		DDE7038968407FE19C19E24ADDD99A2C /* CPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA783E358EF41C66CE7469B40E9E3D6 /* CPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3C400525A26FAE20646C40F820607A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
+		EEA319E1A0285328C01C1EDC5743A592 /* CPhotoAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBE50CB8CD44DF90CE2A99F88A1F55A /* CPhotoAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F22F050587254553089BD5855429405F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
+		F77E360AA9BFB8F4059D811F0EE7FD7D /* CPhotoBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 553E4ED1BA6C9CFFAD27134F6B5FE4D6 /* CPhotoBrowserCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD43C86838DA2FCC871254C97E68AF26 /* CPhotoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3714AF290CE6A59EBEF2FB6FA2C4C49 /* CPhotoGridCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,99 +54,82 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 43E9D697F56AAA1F5E81032C732E6015;
+			remoteGlobalIDString = E7E7AA508A6F498BFA3B8F8285433E74;
+			remoteInfo = SVProgressHUD;
+		};
+		66957580F286FE474CE260CD37AAA7A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7E7AA508A6F498BFA3B8F8285433E74;
 			remoteInfo = SVProgressHUD;
 		};
 		729CE6EBCEEDA9A494CCE1BC724B7FE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF1DF2263790D2F2A62CBD17BE543B12;
+			remoteGlobalIDString = EBD586817136E5145942C256F88C4D2C;
 			remoteInfo = CPhotoPicker;
-		};
-		CD4E3FC0BB29D9E2DE22F7F726FAC958 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43E9D697F56AAA1F5E81032C732E6015;
-			remoteInfo = SVProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "arrow@3x.png"; sourceTree = "<group>"; };
+		02618E7D46DA1637EEE0B7C57D8C0968 /* CAlbumListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListViewController.h; sourceTree = "<group>"; };
+		08C7E1D362752DE3F403BBCB16E24359 /* CPhotoGridViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridViewController.m; sourceTree = "<group>"; };
+		173D6F9B1AB54C523214A351F4E64A76 /* CAlbumListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListCell.h; sourceTree = "<group>"; };
 		1A93F24F79E0D0BDD8479BF216DA8A21 /* Pods-CPhotoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPhotoDemo.release.xcconfig"; sourceTree = "<group>"; };
-		1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumDropView.h; sourceTree = "<group>"; };
-		221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
-		23E5D54FFBC0EFAE0CFBC1C75C064566 /* CPhotoPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPhotoPicker-prefix.pch"; sourceTree = "<group>"; };
+		1F5C6D030118B11FE1C0EE1F09C5AA21 /* CPhotoDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoDataManager.h; sourceTree = "<group>"; };
+		253A1178F4EBC70B1C0F620A031ECA60 /* CPickerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPickerHeader.h; sourceTree = "<group>"; };
+		27E4BF4A1CC087E3997C4A6A283F27FB /* CPhotoDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoDataManager.m; sourceTree = "<group>"; };
 		2D619B9ACB8981FDEB8B6C16926AD452 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		2F6C4154092859FF89EF18A1499B36F5 /* Pods-CPhotoDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPhotoDemo-dummy.m"; sourceTree = "<group>"; };
-		346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListCell.h; sourceTree = "<group>"; };
 		3AB6E1E1CB6774858DA1F2CF6234E8D0 /* Pods-CPhotoDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPhotoDemo-frameworks.sh"; sourceTree = "<group>"; };
+		3B6B39FC78952C311752FFC0D8CA0428 /* CAlbumDropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumDropView.h; sourceTree = "<group>"; };
+		3E6CDD6ED99FD178EE57CFB37C5AE1C5 /* CPickerSource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = CPickerSource.bundle; sourceTree = "<group>"; };
 		4145347ADDD455C3D49DEF8362E96C34 /* libPods-CPhotoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CPhotoDemo.a"; path = "libPods-CPhotoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridViewController.m; sourceTree = "<group>"; };
 		4870E0EF3AF6486A80CB4D24C53A443F /* Pods-CPhotoDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPhotoDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridViewController.h; sourceTree = "<group>"; };
+		4A839A13D1D3D30562241FDDCE8A36C4 /* CPhotoGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridCell.h; sourceTree = "<group>"; };
+		4CBE50CB8CD44DF90CE2A99F88A1F55A /* CPhotoAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoAsset.h; sourceTree = "<group>"; };
+		5287CD2641601564FB85698D377C4FEE /* CPhotoPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoPicker.h; sourceTree = "<group>"; };
+		536E0CF93C75632BC77165D617C688B6 /* CPhotoPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPhotoPicker-prefix.pch"; sourceTree = "<group>"; };
 		5447D7AF19DDDC8E0891BBA30BC28A5A /* Pods-CPhotoDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPhotoDemo-resources.sh"; sourceTree = "<group>"; };
-		54BA8E5826E9CF81D413222DE15DC773 /* CPickerSource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = CPickerSource.bundle; sourceTree = "<group>"; };
+		553E4ED1BA6C9CFFAD27134F6B5FE4D6 /* CPhotoBrowserCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserCell.h; sourceTree = "<group>"; };
 		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListViewController.m; sourceTree = "<group>"; };
-		60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "camera_d@2x.png"; sourceTree = "<group>"; };
+		61D0044BD65133397B4E98491A2680D1 /* UIView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		64C68F19C7FDB89739A12A754AC192B9 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		68F7D46BED1E968333C3A6BF1D08EF35 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		6A6073EEDABEA90F4218E48202444AB6 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		6E5EB4B1B7B7D1AB4EDE67678CE5B303 /* CAlbumListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListCell.m; sourceTree = "<group>"; };
 		6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CPhotoPicker-dummy.m"; sourceTree = "<group>"; };
+		747418AF3828E51C198A7DDD4B09C951 /* CPhotoGridViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridViewController.h; sourceTree = "<group>"; };
 		7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserCell.m; sourceTree = "<group>"; };
-		7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPickerHeader.h; sourceTree = "<group>"; };
-		7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoDataManager.h; sourceTree = "<group>"; };
+		78740BA660CAB0F78F8A1B033E7C22C0 /* CPhotoPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPhotoPicker.xcconfig; sourceTree = "<group>"; };
+		7B9293C69C2618E7DEB78CEF6568DE58 /* UIView+Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		86E3DC48E40F8C3C553801CB0080D74D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoAsset.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9555AC286759C6A7B24452700AF88D01 /* CAlbumListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListViewController.m; sourceTree = "<group>"; };
+		95E86D59ECBD5F0D50043AB874FB964A /* CPhotoPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CPhotoPicker-dummy.m"; sourceTree = "<group>"; };
+		9AA783E358EF41C66CE7469B40E9E3D6 /* CPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserViewController.h; sourceTree = "<group>"; };
 		9BC573DB45632295E16B9BFB85513810 /* Pods-CPhotoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPhotoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9C73C9BE2996DDC46B07E9593AF67967 /* CPhotoAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoAsset.m; sourceTree = "<group>"; };
 		9C80D8A3D824F9A8BECF1041F91261A4 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoPicker.m; sourceTree = "<group>"; };
-		A65097DA08BD8A501907D092760DBD47 /* CPhotoAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoAsset.h; sourceTree = "<group>"; };
-		A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoDataManager.m; sourceTree = "<group>"; };
-		A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumDropView.m; sourceTree = "<group>"; };
-		ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserViewController.m; sourceTree = "<group>"; };
-		B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "gridCell_select@2x.png"; sourceTree = "<group>"; };
-		B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = Root.strings; path = en.lproj/Root.strings; sourceTree = "<group>"; };
-		B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoPicker.h; sourceTree = "<group>"; };
-		BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CAlbumListViewController.h; sourceTree = "<group>"; };
-		C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPhotoPicker.xcconfig; sourceTree = "<group>"; };
+		A3714AF290CE6A59EBEF2FB6FA2C4C49 /* CPhotoGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridCell.m; sourceTree = "<group>"; };
 		C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "arrow@2x.png"; sourceTree = "<group>"; };
-		CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserCell.h; sourceTree = "<group>"; };
-		CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		C574FFEBC59B230B325ED0A06F90B32E /* CAlbumDropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumDropView.m; sourceTree = "<group>"; };
+		D11A390470E244E269851D144B499658 /* CPhotoBrowserCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserCell.m; sourceTree = "<group>"; };
+		D304028749422F15D26FA2F6F896CB2F /* CPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		D3444AE0273523AC57BAC6A7EBE004B0 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
 		DBAD9287DEE246626CE463AB766658E4 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		DD6F6957AD861C2D16D4AAF6524973A8 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
 		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E54AA267C3040623E76B7BF652A5A74E /* libCPhotoPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCPhotoPicker.a; path = libCPhotoPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6420D73B137C9391B20730953D4C502 /* Pods-CPhotoDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPhotoDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		E6A374AB1310EA4B32513CEB3F350671 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "gridCell_unSelect@2x.png"; sourceTree = "<group>"; };
-		F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; path = "camera_h@2x.png"; sourceTree = "<group>"; };
-		F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CAlbumListCell.m; sourceTree = "<group>"; };
-		F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoGridCell.m; sourceTree = "<group>"; };
-		F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CPhotoGridCell.h; sourceTree = "<group>"; };
+		ECC05FC81815FB89364B671E0FA9B53D /* CPhotoPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CPhotoPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E0EC47C5A10A57A1D086ADE0768FF81 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F5D01FB8C3DEAAFCEF90C903E6CD7AD /* Foundation.framework in Frameworks */,
-				620C8D32E16D4DBC630CF3FCBCC8999C /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8AD757FE96F672923C57BF7BE839F76E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,13 +138,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFC4127FD33531208F7B32BABC433563 /* Frameworks */ = {
+		B6EF3E6DCAF93130ADFD1ADD9D76DFE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15DE8288611A28ABA53D705E18346ED /* Foundation.framework in Frameworks */,
-				FFFABC5D067AD835390AB93338269357 /* QuartzCore.framework in Frameworks */,
-				718967E6BAE9977872FC4B3E7505D30F /* UIKit.framework in Frameworks */,
+				9829CB00DA4BE19E12A578C694984C33 /* Foundation.framework in Frameworks */,
+				7B327974738FAC816F1260F6C22DEB8A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9773B7B37D3971D72038BA6B5337A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C446EADE34CDB9A76BBF6BD9FC4C5708 /* Foundation.framework in Frameworks */,
+				F22F050587254553089BD5855429405F /* QuartzCore.framework in Frameworks */,
+				E3C400525A26FAE20646C40F820607A6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,17 +168,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		0A534039480689A914F059EB5D5C6E3E /* CPhotoPicker */ = {
-			isa = PBXGroup;
-			children = (
-				B8DF7E8D2B4288F7A7A9D06B3DFBCFC2 /* Classes */,
-				A80A323648B3932298FA5816838CC001 /* Resources */,
-				68DE26450614518CBD7A0DF5DE02A87C /* Support Files */,
-			);
-			name = CPhotoPicker;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,41 +176,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2BC6DB41EC64AB34712D742D1A07E5D9 /* ImageSource */ = {
+		4D795947DBF21DE62DA04C65EE4B6DC2 /* ImageSource */ = {
 			isa = PBXGroup;
 			children = (
-				54BA8E5826E9CF81D413222DE15DC773 /* CPickerSource.bundle */,
+				3E6CDD6ED99FD178EE57CFB37C5AE1C5 /* CPickerSource.bundle */,
 			);
 			name = ImageSource;
 			path = ImageSource;
 			sourceTree = "<group>";
 		};
-		3C54F25974B672C4E24F030FA758DDBD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2BC6DB41EC64AB34712D742D1A07E5D9 /* ImageSource */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		525EF373E1A5866EE09A998A2A19CAFA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A534039480689A914F059EB5D5C6E3E /* CPhotoPicker */,
+				BB27D4CECC314E9A03C97EDCE8D808BC /* CPhotoPicker */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		68DE26450614518CBD7A0DF5DE02A87C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */,
-				74511A4750AEF93397650CCA991944D2 /* CPhotoPicker-dummy.m */,
-				23E5D54FFBC0EFAE0CFBC1C75C064566 /* CPhotoPicker-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "CPhotoDemo/Pods/Target Support Files/CPhotoPicker";
 			sourceTree = "<group>";
 		};
 		74588D48F629C3D7E6B7E12AB83072D6 /* Pods */ = {
@@ -260,6 +213,48 @@
 			);
 			sourceTree = "<group>";
 		};
+		83E329614D28947FBF7EF3564912D048 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B6B39FC78952C311752FFC0D8CA0428 /* CAlbumDropView.h */,
+				C574FFEBC59B230B325ED0A06F90B32E /* CAlbumDropView.m */,
+				173D6F9B1AB54C523214A351F4E64A76 /* CAlbumListCell.h */,
+				6E5EB4B1B7B7D1AB4EDE67678CE5B303 /* CAlbumListCell.m */,
+				02618E7D46DA1637EEE0B7C57D8C0968 /* CAlbumListViewController.h */,
+				9555AC286759C6A7B24452700AF88D01 /* CAlbumListViewController.m */,
+				4CBE50CB8CD44DF90CE2A99F88A1F55A /* CPhotoAsset.h */,
+				9C73C9BE2996DDC46B07E9593AF67967 /* CPhotoAsset.m */,
+				553E4ED1BA6C9CFFAD27134F6B5FE4D6 /* CPhotoBrowserCell.h */,
+				D11A390470E244E269851D144B499658 /* CPhotoBrowserCell.m */,
+				9AA783E358EF41C66CE7469B40E9E3D6 /* CPhotoBrowserViewController.h */,
+				D304028749422F15D26FA2F6F896CB2F /* CPhotoBrowserViewController.m */,
+				1F5C6D030118B11FE1C0EE1F09C5AA21 /* CPhotoDataManager.h */,
+				27E4BF4A1CC087E3997C4A6A283F27FB /* CPhotoDataManager.m */,
+				4A839A13D1D3D30562241FDDCE8A36C4 /* CPhotoGridCell.h */,
+				A3714AF290CE6A59EBEF2FB6FA2C4C49 /* CPhotoGridCell.m */,
+				747418AF3828E51C198A7DDD4B09C951 /* CPhotoGridViewController.h */,
+				08C7E1D362752DE3F403BBCB16E24359 /* CPhotoGridViewController.m */,
+				5287CD2641601564FB85698D377C4FEE /* CPhotoPicker.h */,
+				ECC05FC81815FB89364B671E0FA9B53D /* CPhotoPicker.m */,
+				253A1178F4EBC70B1C0F620A031ECA60 /* CPickerHeader.h */,
+				61D0044BD65133397B4E98491A2680D1 /* UIView+Addition.h */,
+				7B9293C69C2618E7DEB78CEF6568DE58 /* UIView+Addition.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8917D1DFB6CFB5F61ADE9FA9F18C0816 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78740BA660CAB0F78F8A1B033E7C22C0 /* CPhotoPicker.xcconfig */,
+				95E86D59ECBD5F0D50043AB874FB964A /* CPhotoPicker-dummy.m */,
+				536E0CF93C75632BC77165D617C688B6 /* CPhotoPicker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "CPhotoDemo/Pods/Target Support Files/CPhotoPicker";
+			sourceTree = "<group>";
+		};
 		95EB61328BDA1070876281302DF94ACF /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,14 +273,6 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		A80A323648B3932298FA5816838CC001 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3C54F25974B672C4E24F030FA758DDBD /* Classes */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		B1E20EA30F6EA61224D7AB80E0BEB70D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,52 +281,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B8DF7E8D2B4288F7A7A9D06B3DFBCFC2 /* Classes */ = {
+		BB27D4CECC314E9A03C97EDCE8D808BC /* CPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				1AA09E4D06502ADFE817B94DCD1D43D3 /* CAlbumDropView.h */,
-				A7EC213C540037AC3AEA900EAA531585 /* CAlbumDropView.m */,
-				346AC23331BD04147020D37D5BF2E484 /* CAlbumListCell.h */,
-				F81F2430649A6D9ECCC28D7541004861 /* CAlbumListCell.m */,
-				BCD1C0C5E6649AB4F3EE7E5EEFE88283 /* CAlbumListViewController.h */,
-				5F2EDD519C49D3F3161731C703BA4CEA /* CAlbumListViewController.m */,
-				A65097DA08BD8A501907D092760DBD47 /* CPhotoAsset.h */,
-				8FD3418BF0008D2814D12E1434566E24 /* CPhotoAsset.m */,
-				CC58FEFC2DAABF1C0DD3AB6BFEAD9DA8 /* CPhotoBrowserCell.h */,
-				7BA8A33D28AF7180C217DCC2A540BF20 /* CPhotoBrowserCell.m */,
-				CFC6CDBB9D8EC6CA2D95AC95E00E6E78 /* CPhotoBrowserViewController.h */,
-				ACDB2B4264777329FBC2A665A3831C6C /* CPhotoBrowserViewController.m */,
-				7EA60891F691FD7060AA320AA713F20D /* CPhotoDataManager.h */,
-				A7C7BA70B5EFA71F0238EDB07322D41A /* CPhotoDataManager.m */,
-				F9D20A6478419F19D7764E38BB3BCADE /* CPhotoGridCell.h */,
-				F849FDA59631D5460F7E81A639DC7970 /* CPhotoGridCell.m */,
-				4F123012A962A9986F1BBF594E5B272A /* CPhotoGridViewController.h */,
-				438EA738933DAECCDD60EE82816D9632 /* CPhotoGridViewController.m */,
-				B33F8572114F3695FD6D126301623B98 /* CPhotoPicker.h */,
-				A35B91A1F54C115FB193ABF1B0A5D1FE /* CPhotoPicker.m */,
-				7C90BF5E1675FB11A234AF12657A4B4C /* CPickerHeader.h */,
-				DFCD1C3D9A1C117A2AF16043449A1E0E /* UIView+Addition.h */,
-				221795B3197CCDABFFDABBC729531436 /* UIView+Addition.m */,
-				D2A32DC5276DA335189A3978C02FE16F /* ImageSource */,
+				83E329614D28947FBF7EF3564912D048 /* Classes */,
+				CD1C95D47D1BE8FA84BB8CAB69A14B73 /* Resources */,
+				8917D1DFB6CFB5F61ADE9FA9F18C0816 /* Support Files */,
 			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BDB49DCFD5A3C3C897D1373450F139F6 /* CPickerSource.bundle */ = {
-			isa = PBXGroup;
-			children = (
-				C873CEFFE5F994A8173C5AB376E10EA5 /* arrow@2x.png */,
-				061A54D4F16626412D7209A6017F7D48 /* arrow@3x.png */,
-				60CE69EB75743C5A796E679C7DA10CBA /* camera_d@2x.png */,
-				F6562CB9DF96D91FA6A526E0811B2297 /* camera_h@2x.png */,
-				B090703E07B2750C8D2AEE1D04C26C5D /* gridCell_select@2x.png */,
-				EEAE735E70A7E29680137099DBBA5ED0 /* gridCell_unSelect@2x.png */,
-				D856D4D3FBD6E8590EE30F21139143A1 /* Root.plist */,
-				AB3834681AEBD2D6D374ACDE7BFD847D /* Root.strings */,
-			);
-			name = CPickerSource.bundle;
-			path = CPickerSource.bundle;
+			name = CPhotoPicker;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		BDE1D145F4A334224EB232EECAD63B61 /* Support Files */ = {
@@ -363,13 +313,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2A32DC5276DA335189A3978C02FE16F /* ImageSource */ = {
+		CD1C95D47D1BE8FA84BB8CAB69A14B73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BDB49DCFD5A3C3C897D1373450F139F6 /* CPickerSource.bundle */,
+				F931A5C5F741F7B805B0947DA2E94359 /* Classes */,
 			);
-			name = ImageSource;
-			path = ImageSource;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D2E1A0B1E8AAC27C3EE8A3DAF94624DA /* Pods-CPhotoDemo */ = {
@@ -397,59 +346,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F931A5C5F741F7B805B0947DA2E94359 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D795947DBF21DE62DA04C65EE4B6DC2 /* ImageSource */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		65BB5971FB2ADD94C4F9A1AA2B628F3A /* Headers */ = {
+		0E22B6D0DF338599D4D88B9544AB341D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27D358356B62B04FBA27B03A2B656B8 /* SVIndefiniteAnimatedView.h in Headers */,
-				72706286654AFF30C36E6EABD66835EF /* SVProgressAnimatedView.h in Headers */,
-				23BF46DDAE14912E2223663161F5B696 /* SVProgressHUD.h in Headers */,
-				E6A9D5449A8C1CE05A7ABEAF3F8BD899 /* SVRadialGradientLayer.h in Headers */,
+				2500AEB14DF3E59934708845FD8D9EB2 /* CAlbumDropView.h in Headers */,
+				AA54295A14870EA4E1A930AFC4549A92 /* CAlbumListCell.h in Headers */,
+				204A46F3F972E29C40C08D86573C683E /* CAlbumListViewController.h in Headers */,
+				EEA319E1A0285328C01C1EDC5743A592 /* CPhotoAsset.h in Headers */,
+				F77E360AA9BFB8F4059D811F0EE7FD7D /* CPhotoBrowserCell.h in Headers */,
+				DDE7038968407FE19C19E24ADDD99A2C /* CPhotoBrowserViewController.h in Headers */,
+				5F3579CE1D488FBED45110D83DCD34CE /* CPhotoDataManager.h in Headers */,
+				37CA26C86068108AE41854037A1697BA /* CPhotoGridCell.h in Headers */,
+				81A3F3ADFC111FD2B3FB667E5AD9D544 /* CPhotoGridViewController.h in Headers */,
+				1EDAC0C1FA05EFF96108E10D68BFBD03 /* CPhotoPicker.h in Headers */,
+				0A5113370755E8C3B2022B6AEEFF40C5 /* CPickerHeader.h in Headers */,
+				50B04F301B83FE0413B7C5D059CAF4C2 /* UIView+Addition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73A1CA125301CEB54BC4B1F6DB931F2F /* Headers */ = {
+		FF0E8CF23447C7955F7F5C29D1A03C0C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B9052B17B3667CC8EBA1FF6DC3509A7 /* CAlbumDropView.h in Headers */,
-				001185DF4EB8A6207FC100B218E3DEAF /* CAlbumListCell.h in Headers */,
-				F649E4539E0385FB0EFE13D56008F741 /* CAlbumListViewController.h in Headers */,
-				CD91C307E14C040D41DA28EFEF891784 /* CPhotoAsset.h in Headers */,
-				182B9D909CCFA59B7A5EA9F54CDF5172 /* CPhotoBrowserCell.h in Headers */,
-				880D941787CE6602FA7A10E80B6FC21E /* CPhotoBrowserViewController.h in Headers */,
-				C9B7CC731B69C57327E0D2988B4578D4 /* CPhotoDataManager.h in Headers */,
-				097EBF7F961CC3A867B53BD05840386C /* CPhotoGridCell.h in Headers */,
-				D3F03BFCF89F9E731800884BEDB946CD /* CPhotoGridViewController.h in Headers */,
-				D7B02F4D4E70F37D9425313F2F37B0D8 /* CPhotoPicker.h in Headers */,
-				50777DC98C7C762256F193AA4498D68E /* CPickerHeader.h in Headers */,
-				20D8B45651F115926DC85F5A9A3243AD /* UIView+Addition.h in Headers */,
+				2623F9B52E7FD420C89E2473EAF73899 /* SVIndefiniteAnimatedView.h in Headers */,
+				3CB23E20D012EBE90749FBE926E6DDD2 /* SVProgressAnimatedView.h in Headers */,
+				B04C91F7935CE72175880F4D79565374 /* SVProgressHUD.h in Headers */,
+				CCCCF5D5599AA7FED3C44D85D10D6C87 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 898557B2549C971BCE9E92A4A345ABA5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
-			buildPhases = (
-				7E436D51851962B5D77A7BBF7EF2C7D1 /* Sources */,
-				2E0EC47C5A10A57A1D086ADE0768FF81 /* Frameworks */,
-				65BB5971FB2ADD94C4F9A1AA2B628F3A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = 6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		7976DB0E7B1F4C41C8F079A3D88DE0B8 /* Pods-CPhotoDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA78E59C655ED54947FC6C8F0E34594 /* Build configuration list for PBXNativeTarget "Pods-CPhotoDemo" */;
@@ -468,18 +409,35 @@
 			productReference = 4145347ADDD455C3D49DEF8362E96C34 /* libPods-CPhotoDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */ = {
+		E7E7AA508A6F498BFA3B8F8285433E74 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 114B82D61DCC90757741DB72565E45F5 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */;
+			buildConfigurationList = FC24E1242EF9D627D59FFD8F1A4E9676 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				33787C276BCB3473DA487E26C4425644 /* Sources */,
-				BFC4127FD33531208F7B32BABC433563 /* Frameworks */,
-				73A1CA125301CEB54BC4B1F6DB931F2F /* Headers */,
+				781E89138DD93E179FC7612DBB807BCD /* Sources */,
+				B6EF3E6DCAF93130ADFD1ADD9D76DFE8 /* Frameworks */,
+				FF0E8CF23447C7955F7F5C29D1A03C0C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F39EEC34FCC01FE1F71F1B04E7EBF8B /* PBXTargetDependency */,
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 6E6E907796CCEE0CA18C38580A80C1ED /* libSVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EBD586817136E5145942C256F88C4D2C /* CPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0142DC59E47D44415CA42171920B410 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */;
+			buildPhases = (
+				9FA4699458B8215D9766B7B19389F7C8 /* Sources */,
+				C9773B7B37D3971D72038BA6B5337A77 /* Frameworks */,
+				0E22B6D0DF338599D4D88B9544AB341D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0E7C9955EC9F747ADF1833087FAAE10 /* PBXTargetDependency */,
 			);
 			name = CPhotoPicker;
 			productName = CPhotoPicker;
@@ -507,50 +465,42 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */,
+				EBD586817136E5145942C256F88C4D2C /* CPhotoPicker */,
 				7976DB0E7B1F4C41C8F079A3D88DE0B8 /* Pods-CPhotoDemo */,
-				43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */,
+				E7E7AA508A6F498BFA3B8F8285433E74 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33787C276BCB3473DA487E26C4425644 /* Sources */ = {
+		781E89138DD93E179FC7612DBB807BCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44E858DF8169DE34199961BEC92CBE8 /* arrow@2x.png in Sources */,
-				A3B87505449573A50C0BA329B35E5D2A /* arrow@3x.png in Sources */,
-				3241211D5A62DF518C6BE0B59DDF67BC /* CAlbumDropView.m in Sources */,
-				BB8E7C270422F916052EC216152372EA /* CAlbumListCell.m in Sources */,
-				AC2EF8250D66C8BD22B71F1C87E37458 /* CAlbumListViewController.m in Sources */,
-				6562791CA6A862FB7238204255F1D4C3 /* camera_d@2x.png in Sources */,
-				F6F783C395FD7E07FC100571049E7FC1 /* camera_h@2x.png in Sources */,
-				4B9B2BB09833F12D1F105AA73FB7B451 /* CPhotoAsset.m in Sources */,
-				27A0C7E6B9E16C66A4DD0FA20545B3C0 /* CPhotoBrowserCell.m in Sources */,
-				60FC49D05343A754B1DD04A0144A65B4 /* CPhotoBrowserViewController.m in Sources */,
-				30A40532C383A58934EC4A3B8751B736 /* CPhotoDataManager.m in Sources */,
-				00BD3BE5358B605B59701C8C396DDE69 /* CPhotoGridCell.m in Sources */,
-				8CEEF1CB7306FBA2B9BD5A4874053A65 /* CPhotoGridViewController.m in Sources */,
-				E981EDA91C56516BA5CE735C272BC5AE /* CPhotoPicker-dummy.m in Sources */,
-				6C93601D8B89F35C1D3358D7DF2D0C6E /* CPhotoPicker.m in Sources */,
-				48F35A815CECC2C0568F628EA8BC0A72 /* gridCell_select@2x.png in Sources */,
-				DAFDBB8B80B29225E1FC14D4182E24A3 /* gridCell_unSelect@2x.png in Sources */,
-				0458A3D7E2FE097649419231013598C1 /* Root.plist in Sources */,
-				B78AB18B64F4DDE6B5498734254887B4 /* Root.strings in Sources */,
-				9133F8FFEE1C7E6938CBA3E6BB55BC81 /* UIView+Addition.m in Sources */,
+				85485511199A573257073F04C55EB837 /* SVIndefiniteAnimatedView.m in Sources */,
+				B522878CCB014524B4A24907B320475D /* SVProgressAnimatedView.m in Sources */,
+				56F86ED8D67EE5D42378E97B69262910 /* SVProgressHUD-dummy.m in Sources */,
+				8ED4B1E0632A54EAFBB95BC900D26B17 /* SVProgressHUD.m in Sources */,
+				407C79583918BE29C18A26574D594521 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E436D51851962B5D77A7BBF7EF2C7D1 /* Sources */ = {
+		9FA4699458B8215D9766B7B19389F7C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50187F50F9F20DA1E003AF3662BE3DF /* SVIndefiniteAnimatedView.m in Sources */,
-				308486162E2E40AD1963DDF652C61BD0 /* SVProgressAnimatedView.m in Sources */,
-				52826059EC3E34BB8017459D264A83D0 /* SVProgressHUD-dummy.m in Sources */,
-				074AC3E0696E9E463E85B6F209524484 /* SVProgressHUD.m in Sources */,
-				C92A12A25F4BEEB667261B72868F108A /* SVRadialGradientLayer.m in Sources */,
+				1D24FE7FE31BE9EBEF05F6EE2AF0F9DB /* CAlbumDropView.m in Sources */,
+				5BC6D433D2F39052CB54E7C23E96B8FD /* CAlbumListCell.m in Sources */,
+				5A56E10717130208FC326FF2F5EAF518 /* CAlbumListViewController.m in Sources */,
+				00C6C21D157F9CA6E47BA88622AB13D1 /* CPhotoAsset.m in Sources */,
+				175C9F60A08AF2E17BDE1AEF0E52817B /* CPhotoBrowserCell.m in Sources */,
+				94231BABE490E8B3339FA8B2357F664B /* CPhotoBrowserViewController.m in Sources */,
+				7607A17A90D25FDB6EA8B082B65F0DF5 /* CPhotoDataManager.m in Sources */,
+				FD43C86838DA2FCC871254C97E68AF26 /* CPhotoGridCell.m in Sources */,
+				851BBBCB7F4EB2205C88A3638217B24E /* CPhotoGridViewController.m in Sources */,
+				CF2928126C17E8A277753ED8BEAD3A04 /* CPhotoPicker-dummy.m in Sources */,
+				0D766F141C5E4BCD5FE5A1FF850AA4AF /* CPhotoPicker.m in Sources */,
+				6B97283CF98E9B7520B8A2B2B3F298A1 /* UIView+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,82 +518,24 @@
 		1409AD8EADBD4C85D7E1AFF9E61FA467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CPhotoPicker;
-			target = AF1DF2263790D2F2A62CBD17BE543B12 /* CPhotoPicker */;
+			target = EBD586817136E5145942C256F88C4D2C /* CPhotoPicker */;
 			targetProxy = 729CE6EBCEEDA9A494CCE1BC724B7FE8 /* PBXContainerItemProxy */;
 		};
 		536BECF8F10B9D4F278BEA740483B992 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */;
+			target = E7E7AA508A6F498BFA3B8F8285433E74 /* SVProgressHUD */;
 			targetProxy = 1E9D4F3FB47569867CF471B31119BB08 /* PBXContainerItemProxy */;
 		};
-		8F39EEC34FCC01FE1F71F1B04E7EBF8B /* PBXTargetDependency */ = {
+		F0E7C9955EC9F747ADF1833087FAAE10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 43E9D697F56AAA1F5E81032C732E6015 /* SVProgressHUD */;
-			targetProxy = CD4E3FC0BB29D9E2DE22F7F726FAC958 /* PBXContainerItemProxy */;
+			target = E7E7AA508A6F498BFA3B8F8285433E74 /* SVProgressHUD */;
+			targetProxy = 66957580F286FE474CE260CD37AAA7A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		AB3834681AEBD2D6D374ACDE7BFD847D /* Root.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0EDAC3B342D4B9BCD33240329DED980 /* Root.strings */,
-			);
-			name = Root.strings;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		0BDA086A199489CABA4B8AD1349B5150 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		23674F0E64C177775B0F5D97799270BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		2FC5A6C42013F502B230F574938B94AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BC573DB45632295E16B9BFB85513810 /* Pods-CPhotoDemo.debug.xcconfig */;
@@ -666,6 +558,29 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		307B33B8AC388133EBD96641FD11E1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78740BA660CAB0F78F8A1B033E7C22C0 /* CPhotoPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -711,7 +626,30 @@
 			};
 			name = Debug;
 		};
-		8592471C71C1A67AA25A6340C7E360EB /* Release */ = {
+		6A34CFF035D6E7BD2743B2C76EA8B8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9319601C6E71BE85E6CD1676513BC822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7639CFC0D8B53A181379B3D35CF6B409 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
@@ -733,29 +671,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		9589BC484748E6053FDD0EC94ABD9DBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C035D30ABE71CBB28EA2E78550ACBE93 /* CPhotoPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		9FA7C99519084F44FBE822D473A8DCFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -820,18 +735,32 @@
 			};
 			name = Release;
 		};
+		DD5EF1E33987E7850D81BE0F874C9340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78740BA660CAB0F78F8A1B033E7C22C0 /* CPhotoPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CPhotoPicker/CPhotoPicker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		114B82D61DCC90757741DB72565E45F5 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9589BC484748E6053FDD0EC94ABD9DBA /* Debug */,
-				23674F0E64C177775B0F5D97799270BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -850,11 +779,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		898557B2549C971BCE9E92A4A345ABA5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		D0142DC59E47D44415CA42171920B410 /* Build configuration list for PBXNativeTarget "CPhotoPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BDA086A199489CABA4B8AD1349B5150 /* Debug */,
-				8592471C71C1A67AA25A6340C7E360EB /* Release */,
+				DD5EF1E33987E7850D81BE0F874C9340 /* Debug */,
+				307B33B8AC388133EBD96641FD11E1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC24E1242EF9D627D59FFD8F1A4E9676 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A34CFF035D6E7BD2743B2C76EA8B8CD /* Debug */,
+				9319601C6E71BE85E6CD1676513BC822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -120,23 +120,23 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         [titleLabel sizeToFit];
         _titleLabel = titleLabel;
 
-        _titleLabel.frame = CGRectMake(navView.frame.size.width / 2 - _titleLabel.width / 2, 20, _titleLabel.width, 44);
+        _titleLabel.frame = CGRectMake(navView.frame.size.width / 2 - _titleLabel.c_width / 2, 20, _titleLabel.c_width, 44);
         
         UITapGestureRecognizer *titleTapGes = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(tapTitleAction)];
         [titleLabel addGestureRecognizer: titleTapGes];
     }
     
     {
-        _arrowImgView = [[UIImageView alloc] initWithFrame: CGRectMake(_titleLabel.maxX + 3, 0, 13.5, 8)];
+        _arrowImgView = [[UIImageView alloc] initWithFrame: CGRectMake(_titleLabel.c_maxX + 3, 0, 13.5, 8)];
         [navView addSubview: _arrowImgView];
-        _arrowImgView.centerY = _titleLabel.centerY;
+        _arrowImgView.c_centerY = _titleLabel.c_centerY;
         _arrowImgView.image = kCImageQuickName(@"arrow");
         _arrowImgView.userInteractionEnabled = YES;
         [_arrowImgView addGestureRecognizer: [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(tapTitleAction)]];
     }
     
     {
-        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, navView.height - 0.5, navView.width, 0.5)];
+        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, navView.c_height - 0.5, navView.c_width, 0.5)];
         [navView addSubview: lineImgView];
         lineImgView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -173,7 +173,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         _sureBtn.enabled =NO;
     }
     {
-        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, tabbarView.width, 0.5)];
+        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, tabbarView.c_width, 0.5)];
         [tabbarView addSubview: lineImgView];
         lineImgView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -189,7 +189,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     flowLayout.minimumLineSpacing = 5;
     flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
     
-    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 64, self.view.width, self.view.height - 64 - 40) collectionViewLayout: flowLayout];
+    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 64, self.view.c_width, self.view.c_height - 64 - 40) collectionViewLayout: flowLayout];
     _listCollectionView.prefetchingEnabled = NO;
     _listCollectionView.dataSource  = self;
     _listCollectionView.delegate = self;
@@ -226,7 +226,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
 - (CAlbumDropView *)albumsView {
     if (!_albumsView) {
-        CAlbumDropView * albumView = [[CAlbumDropView alloc] initWithFrame: CGRectMake(0, 64 - self.view.height, self.view.width, self.view.height - 64)];
+        CAlbumDropView * albumView = [[CAlbumDropView alloc] initWithFrame: CGRectMake(0, 64 - self.view.c_height, self.view.c_width, self.view.c_height - 64)];
         albumView.userInteractionEnabled = NO;
         [self.view insertSubview: albumView belowSubview: _navBarView];
         
@@ -247,7 +247,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     [self.view insertSubview: self.albumsView belowSubview: _navBarView];
 
     [UIView animateWithDuration: 0.3f animations:^{
-        self.albumsView.y = 64;
+        self.albumsView.c_y = 64;
         _arrowImgView.transform = CGAffineTransformMakeRotation(M_PI);
     } completion:^(BOOL finished) {
         self.albumsView.userInteractionEnabled = YES;
@@ -260,7 +260,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
     [UIView animateWithDuration: 0.3f animations:^{
         
-        self.albumsView.y = 64 - [UIScreen mainScreen].bounds.size.height;
+        self.albumsView.c_y = 64 - [UIScreen mainScreen].bounds.size.height;
         _arrowImgView.transform = CGAffineTransformIdentity;
 
     } completion:^(BOOL finished) {
@@ -295,9 +295,9 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
            
             _titleLabel.text = infoDic[kPDMAlbumInfoNameKey];
             [_titleLabel sizeToFit];
-            _titleLabel.frame = CGRectMake(_navBarView.frame.size.width / 2 - _titleLabel.width / 2, 20, _titleLabel.width, 44);
-            _arrowImgView.frame = CGRectMake(_titleLabel.maxX + 3, 0, 13.5, 8);
-            _arrowImgView.centerY  =_titleLabel.centerY;
+            _titleLabel.frame = CGRectMake(_navBarView.frame.size.width / 2 - _titleLabel.c_width / 2, 20, _titleLabel.c_width, 44);
+            _arrowImgView.frame = CGRectMake(_titleLabel.c_maxX + 3, 0, 13.5, 8);
+            _arrowImgView.c_centerY  =_titleLabel.c_centerY;
         }];
     }
 }

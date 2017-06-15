@@ -44,7 +44,7 @@
     [super viewWillAppear:animated];
     
     if (_currentIndex != 0) {
-        [_collectionView setContentOffset:CGPointMake((self.view.width + 20) * _currentIndex, 0) animated:NO];
+        [_collectionView setContentOffset:CGPointMake((self.view.c_width + 20) * _currentIndex, 0) animated:NO];
     }
 }
 
@@ -74,7 +74,7 @@
     }
     
     {
-        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, navView.height - 0.5, navView.width, 0.5)];
+        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, navView.c_height - 0.5, navView.c_width, 0.5)];
         [navView addSubview: lineImgView];
         lineImgView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -113,7 +113,7 @@
     }
     
     {
-        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, tabbarView.width, 0.5)];
+        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, tabbarView.c_width, 0.5)];
         [tabbarView addSubview: lineImgView];
         lineImgView.backgroundColor = [UIColor lightGrayColor];
     }
@@ -139,11 +139,11 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.minimumLineSpacing = 0;
-    layout.itemSize = CGSizeMake(self.view.width + 20, self.view.height - 64 - 40);
+    layout.itemSize = CGSizeMake(self.view.c_width + 20, self.view.c_height - 64 - 40);
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
     
-    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, 64, self.view.width + 20, self.view.height - 64 - 40) collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, 64, self.view.c_width + 20, self.view.c_height - 64 - 40) collectionViewLayout:layout];
     [_collectionView registerClass: [CPhotoBrowserCell class] forCellWithReuseIdentifier: @"CPhotoBrowserCell"];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
@@ -259,9 +259,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat offSetWidth = scrollView.contentOffset.x;
-    offSetWidth = offSetWidth +  ((self.view.width + 20) * 0.5);
+    offSetWidth = offSetWidth +  ((self.view.c_width + 20) * 0.5);
     
-    NSInteger currentIndex = offSetWidth / (self.view.width + 20);
+    NSInteger currentIndex = offSetWidth / (self.view.c_width + 20);
     _currentIndex = currentIndex;
 }
 

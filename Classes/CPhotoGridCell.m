@@ -28,14 +28,14 @@
         _thumbImgView.contentMode = UIViewContentModeScaleAspectFill;
         _thumbImgView.clipsToBounds = YES;
         
-        _selectIconImgView = [[UIImageView alloc] initWithFrame: CGRectMake(self.contentView.width - 27, 0, 27, 27)];
+        _selectIconImgView = [[UIImageView alloc] initWithFrame: CGRectMake(self.contentView.c_width - 27, 0, 27, 27)];
         [self.contentView addSubview: _selectIconImgView];
         _selectIconImgView.image = kCImageQuickName(@"gridCell_unSelect");
         _selectIconImgView.userInteractionEnabled = YES;
         
         [_selectIconImgView addGestureRecognizer: [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(tapSelectIcon)]];
         
-        CGFloat cameraXY = (self.contentView.width - 50) * 0.5;
+        CGFloat cameraXY = (self.contentView.c_width - 50) * 0.5;
         _cameraImgView = [[UIImageView alloc] initWithFrame:CGRectMake(cameraXY, cameraXY, 50, 50)];
         _cameraImgView.backgroundColor = [UIColor clearColor];
         _cameraImgView.userInteractionEnabled = YES;

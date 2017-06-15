@@ -32,7 +32,7 @@ static CGFloat const kAlubmImgViewW = 50;
         _detailInfoLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview: _detailInfoLabel];
         
-        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(10, kAlbumListCellH - 0.5, self.contentView.width, 0.5)];
+        UIImageView *lineImgView = [[UIImageView alloc] initWithFrame: CGRectMake(10, kAlbumListCellH - 0.5, self.contentView.c_width, 0.5)];
         [self.contentView addSubview: lineImgView];
         lineImgView.backgroundColor = [UIColor lightGrayColor];
     }

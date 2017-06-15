@@ -10,14 +10,14 @@
 
 @interface UIView (Addition)
 
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat centerX;
-@property (nonatomic, assign) CGFloat centerY;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGSize size;
-@property (nonatomic, assign, readonly) CGFloat maxX;
-@property (nonatomic, assign, readonly) CGFloat maxY;
+@property (nonatomic, assign) CGFloat c_x;
+@property (nonatomic, assign) CGFloat c_y;
+@property (nonatomic, assign) CGFloat c_centerX;
+@property (nonatomic, assign) CGFloat c_centerY;
+@property (nonatomic, assign) CGFloat c_width;
+@property (nonatomic, assign) CGFloat c_height;
+@property (nonatomic, assign) CGSize c_size;
+@property (nonatomic, assign, readonly) CGFloat c_maxX;
+@property (nonatomic, assign, readonly) CGFloat c_maxY;
 
 @end

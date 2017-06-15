@@ -30,7 +30,7 @@
         self.backgroundColor = [UIColor blackColor];
         
         _scrollView = [[UIScrollView alloc] init];
-        _scrollView.frame = CGRectMake(10, 0, self.contentView.width- 20, self.contentView.height);
+        _scrollView.frame = CGRectMake(10, 0, self.contentView.c_width- 20, self.contentView.c_height);
         _scrollView.bouncesZoom = YES;
         _scrollView.maximumZoomScale = 2.0;
         _scrollView.minimumZoomScale = 1.0;
@@ -93,21 +93,21 @@
     _imageContainerView.frame = CGRectZero;
     
     UIImage *image = _imageView.image;
-    if (image.size.height / image.size.width > self.scrollView.height / self.scrollView.width) { // 以照片长为准
+    if (image.size.height / image.size.width > self.scrollView.c_height / self.scrollView.c_width) { // 以照片长为准
         
-        CGFloat contentViewH = self.scrollView.height;
+        CGFloat contentViewH = self.scrollView.c_height;
         CGFloat conteViewW = floor(contentViewH * image.size.width / image.size.height);
-        _imageContainerView.frame = CGRectMake((self.scrollView.width - conteViewW) / 2, 0, conteViewW, contentViewH);
+        _imageContainerView.frame = CGRectMake((self.scrollView.c_width - conteViewW) / 2, 0, conteViewW, contentViewH);
         
     } else {  //以照片宽为准
-        CGFloat conteViewW = self.scrollView.width;
+        CGFloat conteViewW = self.scrollView.c_width;
         CGFloat contentViewH = floor(conteViewW * image.size.height / image.size.width)  ;
-        _imageContainerView.frame = CGRectMake(0, (_scrollView.height - contentViewH) / 2, conteViewW, contentViewH);
+        _imageContainerView.frame = CGRectMake(0, (_scrollView.c_height - contentViewH) / 2, conteViewW, contentViewH);
     }
 
-    _scrollView.contentSize = CGSizeMake(self.scrollView.width, MAX(_imageContainerView.height, self.scrollView.height));
+    _scrollView.contentSize = CGSizeMake(self.scrollView.c_width, MAX(_imageContainerView.c_height, self.scrollView.c_height));
     [_scrollView scrollRectToVisible:self.bounds animated:NO];
-    _scrollView.alwaysBounceVertical = _imageContainerView.height <= self.scrollView.height ? NO : YES;
+    _scrollView.alwaysBounceVertical = _imageContainerView.c_height <= self.scrollView.c_height ? NO : YES;
     _imageView.frame = _imageContainerView.bounds;
     
 }
@@ -131,8 +131,8 @@
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView {
-    CGFloat offsetX = (scrollView.width > scrollView.contentSize.width) ? (scrollView.width - scrollView.contentSize.width) * 0.5 : 0.0;
-    CGFloat offsetY = (scrollView.height > scrollView.contentSize.height) ? (scrollView.height - scrollView.contentSize.height) * 0.5 : 0.0;
+    CGFloat offsetX = (scrollView.c_width > scrollView.contentSize.width) ? (scrollView.c_width - scrollView.contentSize.width) * 0.5 : 0.0;
+    CGFloat offsetY = (scrollView.c_height > scrollView.contentSize.height) ? (scrollView.c_height - scrollView.contentSize.height) * 0.5 : 0.0;
     self.imageContainerView.center = CGPointMake(scrollView.contentSize.width * 0.5 + offsetX, scrollView.contentSize.height * 0.5 + offsetY);
 }
 

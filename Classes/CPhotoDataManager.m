@@ -468,8 +468,9 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                         resultHandler:^(UIImage * _Nullable resultImg, NSDictionary * _Nullable info) {
                                                             
                                                             if (resultImg) {
-                                                                
+
                                                                 result(resultImg);
+                                                                
                                                             }
                                                         }];
                 
@@ -483,10 +484,11 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                           contentMode: PHImageContentModeAspectFit
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
-                                                            
-                                                            if (resultImg) {
-                                                                
-                                                                result(resultImg);
+                                                            if (info[@"PHImageFileURLKey"] != nil) {
+                                                                if (resultImg) {
+                                                                    
+                                                                    result(resultImg);
+                                                                }
                                                             }
                                                             
                                                         }];
@@ -502,9 +504,11 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
                                                             
-                                                            if (resultImg) {
-                                                                
-                                                                result(resultImg);
+                                                            if (info[@"PHImageFileURLKey"] != nil) {
+                                                                if (resultImg) {
+                                                                    
+                                                                    result(resultImg);
+                                                                }
                                                             }
                                                             
                                                         }];

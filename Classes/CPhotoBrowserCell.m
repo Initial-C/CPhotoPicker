@@ -75,9 +75,8 @@
 - (void)setPhotoAsset:(id)photoAsset {
     _photoAsset = photoAsset;
     [_scrollView setZoomScale:1.0 animated:NO];
-    
-    [[CPhotoDataManager shareInstance] fetchImageFromAsset: photoAsset type: ePhotoResolutionTypeScreenSize targetSize: kScreenSize result:^(UIImage *photo, NSDictionary *info) {
-        self.imageView.image = photo;
+    [[CPhotoDataManager shareInstance] fetchImageFromAsset:photoAsset type:ePhotoResolutionTypeScreenSize targetSize:kScreenSize result:^(UIImage *image, NSDictionary *infoDic) {
+        self.imageView.image = image;
         [self resizeSubviews];
     }];
 }

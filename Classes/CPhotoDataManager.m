@@ -532,7 +532,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
         return;
     }
     
-    [self fetchImageFromAsset: _photosArray[nIndex] type: nType targetSize: size result: result];
+    [self fetchImageFromAsset: _photosArray[nIndex] type: nType targetSize: size result:result];
     
 }
 

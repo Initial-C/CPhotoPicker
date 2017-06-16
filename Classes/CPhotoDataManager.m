@@ -484,7 +484,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                           contentMode: PHImageContentModeAspectFit
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
-                                                            if (info[@"PHImageFileURLKey"] != nil) {
+                                                            if ([info[@"PHImageResultIsDegradedKey"] boolValue] == NO) {
                                                                 if (resultImg) {
                                                                     
                                                                     result(resultImg);
@@ -504,7 +504,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
                                                             
-                                                            if (info[@"PHImageFileURLKey"] != nil) {
+                                                            if ([info[@"PHImageResultIsDegradedKey"] boolValue] == NO) {
                                                                 if (resultImg) {
                                                                     
                                                                     result(resultImg);

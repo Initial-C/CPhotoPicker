@@ -125,7 +125,7 @@
     _selectIconImgView.hidden = NO;
     _photoAsset = photoAsset;
     
-    [[CPhotoDataManager shareInstance] fetchImageFromAsset: photoAsset type: ePhotoResolutionTypeThumb targetSize: CGSizeMake(PhotoCellWidth,PhotoCellWidth) result:^(UIImage * img) {
+    [[CPhotoDataManager shareInstance] fetchImageFromAsset: photoAsset type: ePhotoResolutionTypeThumb targetSize: CGSizeMake(PhotoCellWidth,PhotoCellWidth) result:^(UIImage *img, NSDictionary *info) {
         
         _thumbImgView.image = img;
     }];

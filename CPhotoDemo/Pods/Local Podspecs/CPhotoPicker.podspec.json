@@ -1,6 +1,6 @@
 {
   "name": "CPhotoPicker",
-  "version": "0.0.5",
+  "version": "0.0.6.3",
   "summary": "This a short description of CPhotoPicker.",
   "description": "TODO: It is easy to use, support for custom pop tips.",
   "homepage": "https://github.com/Initial-C/CPhotoPicker/blob/master/README.md",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Initial-C/CPhotoPicker.git",
-    "tag": "0.0.5"
+    "tag": "0.0.6.3"
   },
   "platforms": {
     "ios": "9.0"

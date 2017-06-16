@@ -42,10 +42,12 @@
         } else {
 //            NSLog(@"照片资源数据结果(相册多选的)==%@", imageSources);
             for (id image in imageSources) {
-                [[CPhotoDataManager shareInstance] fetchImageFromAsset:image type:ePhotoResolutionTypeOrigin targetSize:[UIScreen mainScreen].bounds.size result:^(UIImage *image) {
-                    image = [weakSelf resizeImage:image];
-                    NSLog(@"单张图==%@", image);
-                    weakSelf.imageV.image = image;
+                [[CPhotoDataManager shareInstance] fetchImageFromAsset:image type:ePhotoResolutionTypeOrigin targetSize:[UIScreen mainScreen].bounds.size result:^(UIImage *image, NSDictionary *info) {
+                    if ([info[@"PHImageResultIsDegradedKey"] boolValue] == NO) {
+                        image = [weakSelf resizeImage:image];
+                        NSLog(@"单张图==%@", image);
+                        weakSelf.imageV.image = image;
+                    }
                 }];
             }
         }

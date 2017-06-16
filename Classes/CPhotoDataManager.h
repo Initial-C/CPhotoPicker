@@ -92,11 +92,11 @@ typedef void (^fetchResultBlock)(NSArray *);
 /**
  *  根据照片分辨率、照片大小、照片资源 获取UIImage targetSize仅iOS8后支持
  */
-- (void)fetchImageFromAsset:(id)asset type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *))result;
+- (void)fetchImageFromAsset:(id)asset type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *, NSDictionary *))result;
 /**
  *  根据照片分辨率、照片大小、照片索引 获取UIImage targetSize仅iOS8后支持
  */
-- (void)fetchImageByIndex:(NSInteger)nIndex type:(PhotoResolutionType)nType  targetSize:(CGSize)size result:(void (^)(UIImage *))result;
+- (void)fetchImageByIndex:(NSInteger)nIndex type:(PhotoResolutionType)nType  targetSize:(CGSize)size result:(void (^)(UIImage *, NSDictionary *))result;
 
 /* ----------- 工具方法 ------------ */
 

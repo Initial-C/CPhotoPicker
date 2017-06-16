@@ -443,10 +443,10 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
     return _photosArray[nIndex];
 }
 
-- (void)fetchImageFromAsset:(id)asset type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *))result {
+- (void)fetchImageFromAsset:(id)asset type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *, NSDictionary *))result {
     
     if (asset == nil) {
-        result(nil);
+        result(nil, nil);
         return ;
     }
     
@@ -469,7 +469,7 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                             
                                                             if (resultImg) {
 
-                                                                result(resultImg);
+                                                                result(resultImg, info);
                                                                 
                                                             }
                                                         }];
@@ -484,11 +484,9 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                           contentMode: PHImageContentModeAspectFit
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
-                                                            if ([info[@"PHImageResultIsDegradedKey"] boolValue] == NO) {
-                                                                if (resultImg) {
-                                                                    
-                                                                    result(resultImg);
-                                                                }
+                                                            if (resultImg, info) {
+                                                                
+                                                                result(resultImg, info);
                                                             }
                                                             
                                                         }];
@@ -504,11 +502,9 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
                                                               options: options
                                                         resultHandler:^(UIImage *resultImg, NSDictionary *info){
                                                             
-                                                            if ([info[@"PHImageResultIsDegradedKey"] boolValue] == NO) {
-                                                                if (resultImg) {
-                                                                    
-                                                                    result(resultImg);
-                                                                }
+                                                            if (resultImg) {
+                                                                
+                                                                result(resultImg, info);
                                                             }
                                                             
                                                         }];
@@ -528,11 +524,11 @@ NSString *  const kPDMAlbumInfoCountKey = @"PDMAlbumInfoCountKey";
     return _context;
 }
 
-- (void)fetchImageByIndex:(NSInteger)nIndex type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *))result {
+- (void)fetchImageByIndex:(NSInteger)nIndex type:(PhotoResolutionType)nType targetSize:(CGSize)size result:(void (^)(UIImage *, NSDictionary *))result {
     
     if (nIndex >= _photosArray.count) {
         
-        result(nil);
+        result(nil, nil);
         return;
     }
     

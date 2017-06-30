@@ -16,6 +16,8 @@
 #import "CPickerHeader.h"
 #import "CPickerHeader.h"
 
+#define IOS_VERSION_10 (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_9_x_Max)?(YES):(NO)
+
 static NSString *const cellIdentifier = @"CPhotoGridCell";
 
 @interface CPhotoGridViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -190,7 +192,9 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
     
     _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 64, self.view.c_width, self.view.c_height - 64 - 40) collectionViewLayout: flowLayout];
-    _listCollectionView.prefetchingEnabled = NO;
+    if (IOS_VERSION_10) {
+        _listCollectionView.prefetchingEnabled = NO;
+    }
     _listCollectionView.dataSource  = self;
     _listCollectionView.delegate = self;
     _listCollectionView.backgroundColor = [UIColor whiteColor];

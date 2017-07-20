@@ -35,6 +35,8 @@
      }
      */
     CPhotoPicker *picker = [[CPhotoPicker alloc] init];
+    picker.limitCameraTips = @"打开相机";
+    picker.limitPhotoTips = @"打开照片";
     __weak typeof(self) weakSelf = self;
     [picker showPhotoPickerWithController:self maxSelectCount:6 completion:^(NSArray *imageSources, BOOL isImgType) {
         if (isImgType) {

@@ -14,7 +14,7 @@
 #import "CPhotoAsset.h"
 #import "UIView+Addition.h"
 #import "CPickerHeader.h"
-#import "CPickerHeader.h"
+#import "CPhotoPicker.h"
 
 #define IOS_VERSION_10 (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_9_x_Max)?(YES):(NO)
 
@@ -446,6 +446,12 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         if (selectedIndex != -1) {
             [_selectedArray removeObjectAtIndex: selectedIndex];
             [cell selectCellItem: NO anim: YES];
+        } else {
+            if (_selectedArray.count == _maxSelectCount) {
+                [SVProgressHUD setMinimumDismissTimeInterval:1.0];
+                [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+                [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"你最多只能选择%zi张照片", _maxSelectCount]];
+            }
         }
     }
     
@@ -512,7 +518,8 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
                 }
             }];
         } else {
-            [SVProgressHUD showInfoWithStatus:kLimitCameraTips];
+            [SVProgressHUD showInfoWithStatus:_limitCameraStr == nil ?
+                            kLimitCameraTips : _limitCameraStr];
         }
     }];
 }

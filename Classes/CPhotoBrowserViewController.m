@@ -166,6 +166,9 @@
 - (void)selectBtnClick {
     
     if (_selecteAssets.count == _maxSelectCount && _rightSelectBtn.isSelected == NO) {
+        [SVProgressHUD setMinimumDismissTimeInterval:1.0];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD showInfoWithStatus:[NSString stringWithFormat:@"你最多只能选择%zi张照片", _maxSelectCount]];
         return;
     }
     _rightSelectBtn.selected = !_rightSelectBtn.selected;

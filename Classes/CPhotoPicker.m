@@ -19,8 +19,8 @@
     [CPhotoDataManager isPhotoLibraryVisible:^(PhotoAuthorizationStatus status) {
         
         if (status == PhotoAuthorizationStatusDenied) {
-            
-            [SVProgressHUD showInfoWithStatus:kLimitPhotoTips];
+            [SVProgressHUD showInfoWithStatus:_limitPhotoTips == nil?
+                             kLimitPhotoTips : _limitPhotoTips];
             
         }else if(status == PhotoAuthorizationStatusNotDetermined){
             //相册进行授权
@@ -75,6 +75,7 @@
 //        [listNav pushViewController: photoListVC animated: NO];
 //    });
         CPhotoGridViewController * photoListVC = [[CPhotoGridViewController alloc] init];
+        photoListVC.limitCameraStr = self.limitCameraTips;
         UINavigationController * listNav = [[UINavigationController alloc] initWithRootViewController: photoListVC];
         photoListVC.maxSelectCount = maxCount;
         photoListVC.selectedCompletion = ^ (NSArray * imagesArray, BOOL isImgType) {

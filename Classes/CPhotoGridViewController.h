@@ -14,6 +14,8 @@
 
 @property (nonatomic , assign) NSUInteger maxSelectCount;
 
+@property (strong, nonatomic) NSString *limitCameraStr;
+
 @property (nonatomic , strong) id albumData; // 配合CAlbumListViewController
 
 @property (nonatomic , copy) void (^selectedCompletion)(NSArray * imagesArray, BOOL isImgType);

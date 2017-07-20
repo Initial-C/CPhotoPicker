@@ -11,6 +11,9 @@
 
 @interface CPhotoPicker : NSObject
 
+@property (strong, nonatomic) NSString *limitPhotoTips;
+@property (strong, nonatomic) NSString *limitCameraTips;
+
 - (void)showPhotoPickerWithController:(UIViewController *)controller maxSelectCount:(NSUInteger)maxCount completion:(void (^)(NSArray *imageSources , BOOL isImgType))completion;
 
 @end

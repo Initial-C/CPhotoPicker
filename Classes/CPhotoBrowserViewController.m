@@ -143,7 +143,7 @@
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
     
-    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, kCPickerNavH, self.view.c_width + 20, self.view.c_height - kCPickerNavH - 40) collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, 64, self.view.c_width + 20, self.view.c_height - 64 - 40) collectionViewLayout:layout];
     [_collectionView registerClass: [CPhotoBrowserCell class] forCellWithReuseIdentifier: @"CPhotoBrowserCell"];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;

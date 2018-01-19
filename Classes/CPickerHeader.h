@@ -24,7 +24,7 @@
 #define kCGetBundle [NSBundle bundleForClass:[self class]]
 #define kCImageSrcName(file) [@"CPickerSource.bundle" stringByAppendingPathComponent:file]
 #define kCImageFrameworkSrcName(file) [@"Frameworks/CPhotoPicker.framework/CPickerSource.bundle" stringByAppendingPathComponent:file]
-#define kCImageQuickName(file) [UIImage imageNamed:kCImageSrcName(file)?:kCImageFrameworkSrcName(file)]
+#define kCImageQuickName(file) [UIImage imageNamed:kCImageSrcName(file)] ?: [UIImage imageNamed:kCImageFrameworkSrcName(file)]
 
 #define kLimitPhotoTips @"请进入设置 -> 嫣汐 -> 打开照片选项"
 #define kLimitCameraTips @"请进入设置 -> 嫣汐 -> 打开相机选项"

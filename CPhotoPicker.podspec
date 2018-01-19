@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
 s.name             = 'CPhotoPicker'
-s.version          = '0.0.9'
+s.version          = '0.0.9.1'
 s.summary          = 'This a short description of CPhotoPicker.'
 s.description      = <<-DESC
 TODO: It is easy to use, support for custom pop tips.

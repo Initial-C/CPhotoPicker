@@ -14,6 +14,11 @@ extern NSString *  const kPDMAlbumInfoImgKey;
 extern NSString *  const kPDMAlbumInfoNameKey;
 extern NSString *  const kPDMAlbumInfoCountKey;
 
+#define kCPickeriPhoneX ([UIScreen mainScreen].bounds.size.height == 812)
+#define kCPickerNavH (kCPickeriPhoneX ? 88 : 64)
+#define kCPickerNavMargin (kCPickeriPhoneX ? 44 : 20)
+#define kCPickerSpecTabH (kCPickeriPhoneX ? 68 : 40)
+
 typedef NS_ENUM(NSInteger , PhotoResolutionType) {
     ePhotoResolutionTypeOrigin,         // 原图
     ePhotoResolutionTypeThumb,          // 缩略图

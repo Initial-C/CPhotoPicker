@@ -64,7 +64,7 @@
 
 - (void)configNavBar {
     self.navigationController.navigationBarHidden = YES;
-    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, kCPickerNavH)];
     [self.view addSubview: navView];
     
     {
@@ -84,7 +84,7 @@
         [returnBtn setTitle: @"返回" forState: UIControlStateNormal];
         [returnBtn addTarget: self action: @selector(returnBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [navView addSubview: returnBtn];
-        returnBtn.frame = CGRectMake(0, 20, 50, 44);
+        returnBtn.frame = CGRectMake(0, kCPickerNavMargin, 50, 44);
         returnBtn.titleLabel.font = [UIFont systemFontOfSize: 16];
         [returnBtn setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
     }
@@ -93,7 +93,7 @@
         UIButton *selectBtn = [UIButton buttonWithType: UIButtonTypeCustom];
         [selectBtn addTarget: self action: @selector(selectBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [navView addSubview: selectBtn];
-        selectBtn.frame = CGRectMake(navView.frame.size.width - 27 - 10, 28, 27, 27);
+        selectBtn.frame = CGRectMake(navView.frame.size.width - 27 - 10, kCPickerNavMargin + 8, 27, 27);
         _rightSelectBtn = selectBtn;
         [selectBtn setBackgroundImage: kCImageQuickName(@"gridCell_unSelect") forState: UIControlStateNormal];
         [selectBtn setBackgroundImage: kCImageQuickName(@"gridCell_select") forState: UIControlStateSelected];
@@ -102,7 +102,7 @@
 }
 
 - (void)configTabbar {
-    UIView *tabbarView = [[UIView alloc] initWithFrame: CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40)];
+    UIView *tabbarView = [[UIView alloc] initWithFrame: CGRectMake(0, self.view.frame.size.height - kCPickerSpecTabH, self.view.frame.size.width, kCPickerSpecTabH)];
     tabbarView.backgroundColor = [UIColor clearColor];
     [self.view addSubview: tabbarView];
     
@@ -139,11 +139,11 @@
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.minimumLineSpacing = 0;
-    layout.itemSize = CGSizeMake(self.view.c_width + 20, self.view.c_height - 64 - 40);
+    layout.itemSize = CGSizeMake(self.view.c_width + 20, self.view.c_height - kCPickerNavH - 40);
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
     
-    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, 64, self.view.c_width + 20, self.view.c_height - 64 - 40) collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(- 10, kCPickerNavH, self.view.c_width + 20, self.view.c_height - kCPickerNavH - 40) collectionViewLayout:layout];
     [_collectionView registerClass: [CPhotoBrowserCell class] forCellWithReuseIdentifier: @"CPhotoBrowserCell"];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;

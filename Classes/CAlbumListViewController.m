@@ -40,7 +40,7 @@ NSString *const AlbumListCellIdentifier = @"CAlbumListCell";
 
 - (void)configNavBar {
     self.navigationController.navigationBarHidden = YES;
-    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, kCPickerNavH)];
     navView.backgroundColor = [UIColor blackColor];
     [self.view addSubview: navView];
     
@@ -49,12 +49,12 @@ NSString *const AlbumListCellIdentifier = @"CAlbumListCell";
         [cancelBtn setTitle: @"取消" forState: UIControlStateNormal];
         [cancelBtn addTarget: self action: @selector(cancelBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [navView addSubview: cancelBtn];
-        cancelBtn.frame = CGRectMake(navView.frame.size.width - 50 - 10, 20, 50, 44);
+        cancelBtn.frame = CGRectMake(navView.frame.size.width - 50 - 10, kCPickerNavMargin, 50, 44);
         cancelBtn.titleLabel.font = [UIFont systemFontOfSize: 14];
     }
     
     {
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(navView.frame.size.width / 2 - 75, 20, 150, 44)];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(navView.frame.size.width / 2 - 75, kCPickerNavMargin, 150, 44)];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.font = [UIFont systemFontOfSize: 16];
@@ -70,7 +70,7 @@ NSString *const AlbumListCellIdentifier = @"CAlbumListCell";
     flowLayout.minimumLineSpacing = 5;
     flowLayout.minimumInteritemSpacing = 0;
 
-    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64) collectionViewLayout: flowLayout];
+    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, kCPickerNavH, self.view.frame.size.width, self.view.frame.size.height - kCPickerNavH) collectionViewLayout: flowLayout];
     _listCollectionView.dataSource  = self;
     _listCollectionView.delegate = self;
     [self.view addSubview: _listCollectionView];

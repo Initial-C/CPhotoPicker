@@ -85,7 +85,8 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
 - (void)configNavBar {
     self.navigationController.navigationBarHidden = YES;
-    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    
+    UIView *navView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width, kCPickerNavH)];
     navView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: navView];
     _navBarView = navView;
@@ -97,7 +98,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         [backToListBtn addTarget: self action: @selector(cancelBtnClick) forControlEvents: UIControlEventTouchUpInside];
         [navView addSubview: backToListBtn];
         [backToListBtn setTitleColor: [UIColor blackColor] forState: UIControlStateNormal];
-        backToListBtn.frame = CGRectMake(0, 24, 50, 40);
+        backToListBtn.frame = CGRectMake(0, kCPickerNavMargin + 4, 50, 40);
         backToListBtn.titleLabel.font = [UIFont systemFontOfSize: 14];
         _cameraBtn = backToListBtn;
     }
@@ -113,7 +114,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     }
     */
     {
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(navView.frame.size.width / 2 - 75, 20, 150, 44)];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(navView.frame.size.width / 2 - 75, kCPickerNavMargin, 150, 44)];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.font = [UIFont systemFontOfSize: 18];
         titleLabel.text = @"所有照片";
@@ -122,7 +123,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         [titleLabel sizeToFit];
         _titleLabel = titleLabel;
 
-        _titleLabel.frame = CGRectMake(navView.frame.size.width / 2 - _titleLabel.c_width / 2, 20, _titleLabel.c_width, 44);
+        _titleLabel.frame = CGRectMake(navView.frame.size.width / 2 - _titleLabel.c_width / 2, kCPickerNavMargin, _titleLabel.c_width, 44);
         
         UITapGestureRecognizer *titleTapGes = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(tapTitleAction)];
         [titleLabel addGestureRecognizer: titleTapGes];
@@ -145,7 +146,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 }
 
 - (void)configTabbar {
-    UIView *tabbarView = [[UIView alloc] initWithFrame: CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40)];
+    UIView *tabbarView = [[UIView alloc] initWithFrame: CGRectMake(0, self.view.frame.size.height - kCPickerSpecTabH, self.view.frame.size.width, kCPickerSpecTabH)];
     tabbarView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: tabbarView];
     
@@ -191,7 +192,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     flowLayout.minimumLineSpacing = 5;
     flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
     
-    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, 64, self.view.c_width, self.view.c_height - 64 - 40) collectionViewLayout: flowLayout];
+    _listCollectionView = [[UICollectionView alloc] initWithFrame: CGRectMake(0, kCPickerNavH, self.view.c_width, self.view.c_height - kCPickerNavH - 40) collectionViewLayout: flowLayout];
     if (IOS_VERSION_10) {
         _listCollectionView.prefetchingEnabled = NO;
     }
@@ -230,7 +231,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
 - (CAlbumDropView *)albumsView {
     if (!_albumsView) {
-        CAlbumDropView * albumView = [[CAlbumDropView alloc] initWithFrame: CGRectMake(0, 64 - self.view.c_height, self.view.c_width, self.view.c_height - 64)];
+        CAlbumDropView * albumView = [[CAlbumDropView alloc] initWithFrame: CGRectMake(0, kCPickerNavH - self.view.c_height, self.view.c_width, self.view.c_height - kCPickerNavH)];
         albumView.userInteractionEnabled = NO;
         [self.view insertSubview: albumView belowSubview: _navBarView];
         
@@ -251,7 +252,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
     [self.view insertSubview: self.albumsView belowSubview: _navBarView];
 
     [UIView animateWithDuration: 0.3f animations:^{
-        self.albumsView.c_y = 64;
+        self.albumsView.c_y = kCPickerNavH;
         _arrowImgView.transform = CGAffineTransformMakeRotation(M_PI);
     } completion:^(BOOL finished) {
         self.albumsView.userInteractionEnabled = YES;
@@ -264,7 +265,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
 
     [UIView animateWithDuration: 0.3f animations:^{
         
-        self.albumsView.c_y = 64 - [UIScreen mainScreen].bounds.size.height;
+        self.albumsView.c_y = kCPickerNavH - [UIScreen mainScreen].bounds.size.height;
         _arrowImgView.transform = CGAffineTransformIdentity;
 
     } completion:^(BOOL finished) {
@@ -272,7 +273,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
         self.view.userInteractionEnabled = YES;
         
         [self.albumsView removeFromSuperview];
-        [_arrowImgView.layer addAnimation:[self getIconAnimation] forKey:@"move"];
+//        [_arrowImgView.layer addAnimation:[self getIconAnimation] forKey:@"move"];
         _hadShowAlbumListView = NO;
 
     }];
@@ -299,7 +300,7 @@ static NSString *const cellIdentifier = @"CPhotoGridCell";
            
             _titleLabel.text = infoDic[kPDMAlbumInfoNameKey];
             [_titleLabel sizeToFit];
-            _titleLabel.frame = CGRectMake(_navBarView.frame.size.width / 2 - _titleLabel.c_width / 2, 20, _titleLabel.c_width, 44);
+            _titleLabel.frame = CGRectMake(_navBarView.frame.size.width / 2 - _titleLabel.c_width / 2, kCPickerNavMargin, _titleLabel.c_width, 44);
             _arrowImgView.frame = CGRectMake(_titleLabel.c_maxX + 3, 0, 13.5, 8);
             _arrowImgView.c_centerY  =_titleLabel.c_centerY;
         }];
